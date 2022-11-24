@@ -1,4 +1,4 @@
-<h1 align="center">jhtkoo.github.io</h1>
+<h1 align="center">jhtkoo0426.github.io</h1>
 <p align="center">This is the first iteration of my 2022 portfolio built with <a href="https://reactjs.org" target="_blank">React.js</a>.</p>
 
 ## Software Stack
