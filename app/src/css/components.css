@@ -117,8 +117,6 @@
     color: var(--dark-grey);
 }
 
-.anchor:hover { color: var(--blue); }
-
 
 /* Handling mobile responsiveness */
 /* Large Devices, Wide Screens */

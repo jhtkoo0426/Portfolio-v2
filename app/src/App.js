@@ -18,7 +18,6 @@ const AppRoute = () => {
   );
 };
 
-
 // Main Function
 export default function App() {
   // Declaring states for using splash screen.
@@ -29,9 +28,7 @@ export default function App() {
     setTimeout(() => {
       setIsLoading(false);
     }, 0);
-  }, []);
-
-  
+  }, []);  
 
   return isLoading ? 
     // Page is still loading -> Display the splash screen

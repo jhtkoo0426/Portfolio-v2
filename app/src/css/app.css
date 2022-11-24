@@ -130,6 +130,31 @@ span.underline {
     color: var(--dark-grey);
 }
 
+.topnav-menu > a {
+    position: relative;
+    margin: 0 10px;
+}
+
+.topnav-menu > a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    border-radius: 4px;
+    background-color: #18272F;
+    bottom: 0;
+    left: 0;
+    top: 25px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+}
+
+.topnav-menu > a:hover::before {
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
 /* Botnav CSS */
 .botnav {
     height: 20vh;
