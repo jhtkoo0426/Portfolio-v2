@@ -61,7 +61,7 @@ const Layout = () => {
         </div>
         <nav className="botnav">
           <div className="contact-text">
-            <h1>Contacts</h1>
+            <h1>Let's get in touch</h1>
             <p>jhtkbusiness@gmail.com</p>
             <div className="phone-grid">
               <div>

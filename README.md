@@ -1,7 +1,7 @@
 <h1 align="center">jhtkoo0426.github.io</h1>
-<p align="center">This is the first iteration of my 2022 portfolio built with <a href="https://reactjs.org" target="_blank">React.js</a>.</p>
+<p align="center">This is the final iteration of my 2022 portfolio built with <a href="https://reactjs.org" target="_blank">React.js</a>.</p>
 
-## Software Stack
+## Software Used
 - React.js
 - CSS, JavaScript
 - [react-router-dom](https://github.com/remix-run/react-router/tree/main/packages/react-router-dom)
@@ -10,15 +10,13 @@
 - [ ] Elaborate on available projects in work page.
 
 ## TODO (UI/UX)
-- [ ] Add more design variety to work showcases.
-- [ ] Add indicator on which page the user is current on.
-- [ ] Add background to landing page.
-- [ ] Add scrolling effects.
+- [x] Add more design variety to work showcases.
+- [x] Add scrolling effects.
 - [ ] CSS webkit.
-- [ ] Improve splash screen animation.
+- [ ] Add splash screen animation.
 
 ## TODO (Overall)
-- [ ] Refactor React.js components.
+- [ ] Refactor code into React.js components, especially containers.
 - [ ] Improve CSS code quality.
 
 ## Local Deployment

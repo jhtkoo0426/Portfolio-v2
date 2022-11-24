@@ -2,18 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* scroll-behavior: smooth; */
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 :root {
     --black: #000;
     --white: #fff;
-    --grey: #ccfafc; /* #deecf0; */
     --dark-grey: #0b131d;
-    --blue: #51f3e6; /* #56c6d4 */
+    --yellow: #e3e70f;
+    --purple: #420FE7;
+    --light-purple: #bdbef7;
+
     --p-large: calc(10px + 0.85vw);
     --p-mid: calc(10px + 0.55vw);
-    --h1-large: calc(30px + 5vw);
+    --h1-large: calc(25px + 4vw);
     --h1-mid: calc(20px + 3vw);
     --h1-small: calc(15px + 2vw);
     --h1-e-small: calc(10px + 1.5vw);
@@ -49,32 +53,16 @@
     src: url("../fonts/Noah/TTF/Noah\ Head\ Bold.otf");
 }
 
-/* custom scrollbar CSS */
-::-webkit-scrollbar {
-    width: 14px;
-    background-color: transparent;
+p {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
-  
-::-webkit-scrollbar-track {
-    border: solid 3px transparent;
-    /* background: var(--grey); */
-}
-  
-::-webkit-scrollbar-thumb {
-    /* background-color: var(--blue); */
-    background-color: var(--dark-grey);
-    border-radius: 10px;
-    border: solid 3px transparent;
-    background-clip: content-box;
-}
-  
-::-webkit-scrollbar-thumb:hover { }
 
 /* CSS for app container layout */
 .app {
     width: 100%;
     height: 100%;
-    /* background-color: var(--grey); */
+    background-color: var(--purple);
 }
 
 /* Topnav CSS */
@@ -82,7 +70,7 @@
     position: fixed;
     top: 0;
     width: 100%;
-    height: 80px;
+    height: 200px;
     padding: 0 5%;
     display: flex;
     align-items: center;
@@ -94,8 +82,7 @@
     text-decoration: none;
     font-family: 'InterBold';
     font-size: 1.8rem;
-    /* color: var(--blue); */
-    color: var(--dark-grey);
+    color: var(--yellow);
 }
 
 .topnav-menu > a {
@@ -141,14 +128,13 @@
 
 .botnav > .contact-text {
     line-height: 150%;
-    font-family: 'InterReg';
+    font-family: 'NoahReg';
 }
 
 .botnav > .contact-text > .phone-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
-    font-family: 'InterReg';
 }
 
 .botnav > .contact-links {
@@ -162,53 +148,45 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 8px;
+    border-radius: 5px;
     background-color: var(--grey);
     color: var(--dark-grey);
     font-size: var(--p-large);
 }
 
+
 /* Homepage CSS */
-.landing-container {
+.landing-grid {
     width: 100%;
-    height: 100vh;
-    padding: 0 12.5%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 
-.landing-container > .intro-grid {
-    display: grid;
-    grid-template-columns: 60% 40%;
-    grid-gap: 1%;
+.landing-grid > div > .intro {
+    font-family: 'SSProReg';
+    font-size: var(--p-large);
+    color: var(--yellow);
 }
 
-.landing-container > .landing-grid > .intro-title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+.landing-grid > div > .intro-title {
+    font-family: 'NoahBold';
+    font-size: var(--h1-large);
+    color: var(--white);
 }
 
-.landing-container > .landing-grid > .intro-title > h1 {
-    /* color: var(--white); */
+.landing-grid > div > .about {
+    width: 40%;
+    margin-right: 10%;
+    float: right;
+    line-height: 180%;
+    font-family: 'InterReg';
+    font-size: var(--p-mid);
+    color: var(--light-purple);
 }
 
-.intro-container {
-    padding: 0 5%;
-    display: grid;
-    grid-template-columns: 30% 70%;
+.landing-grid > div > .about > .email-cpy {
+    padding: 20px 40px;
+    outline: 1px solid var(--grey);
 }
 
-.skillset > p:first-child {
-    margin-bottom: 20px;
-}
-
-.skillset > .skill {
-    margin-bottom: 10px;
-    font-family: 'InterBold';
-    font-size: calc(12px + 0.65vw);
-}
 
 
 /* Handling mobile responsiveness */

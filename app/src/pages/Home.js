@@ -1,42 +1,78 @@
 import Anchor from '../components/Anchor';
 import Container from '../components/Container';
+
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+
+import l4s_landing from "../media/l4s_landing.jpg";
+import l4s_demo from "../videos/l4s-demo.mp4";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCalendar, faCalendarAlt, faCalendarDay, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
 
 const Home = () => {
     return (
         <div className='homepage'>
-            <div className='landing-container' >
+            <Container id={"landing"}>
                 <div className='landing-grid'>
-                    <p className='p-large'>Hi! I'm Justin 👋</p>
-                    <div className='intro-title'>
-                        <h1></h1>
-                    </div>
-                    <p className='p-large'>I'm a Computer Science student at <Anchor href={"https://www.ucl.ac.uk"}>UCL</Anchor> with 
-                    a burning passion in data analysis and trading</p>
-                </div>
-            </div>
-            <Container id={"intro"}>
-                <div className='intro-container'>
                     <ParallaxProvider>
-                        <Parallax speed={30}>
-                            <div className='skillset'>
-                                <p className='p-mid'>Some of my core skills</p>
-                                <p className='skill'>data analysis</p>
-                                <p className='skill'>systems engineering</p>
-                                <p className='skill'>full-stack development</p>
-                            </div>
+                        <Parallax speed={0}>
+                            <p className='intro'>Hi there, I'm Justin!</p>
+                            <br></br>
+                            <h1 className='intro-title'>I'm a Student Developer Turning Your Paperballs Into a Paperplane</h1>
                         </Parallax>
                         <Parallax speed={10}>
-                            <p>During university, I worked as a <span className='underline'>part-time business 
-                                analyst</span> at Look4SchoolsUK, an education platform. In a span of 2 years, 
-                                I developed a webapp prototype for the company, which identified and prevented 
-                                loopholes in some of its planned features and web flows.I also helped with ad-hoc 
-                                tasks including <span className='underline'>data collection and analysis</span> on
-                                UK school data.</p>
+                            <p className='about'>I am currently pursuing a Computer Science degree at University College London, with 
+                                a special focus on data analysis and financial markets.</p>
                         </Parallax>
                     </ParallaxProvider>
-                </div>  
+                </div>
+            </Container>
+            <Container id={"experience-intro"}>
+                <h1 className=''>Work Experience</h1>
+            </Container>
+            <Container id={"look4schoolsuk"}>
+                <ParallaxProvider>
+                    <Parallax speed={10}>
+                        <div className='exp-wrapper'>
+                            <img src={l4s_landing} alt=""></img>
+                            <div className='exp-content'>
+                                <h1 className=''>Look4SchoolsUK</h1>
+                                <span><FontAwesomeIcon icon={faCalendarDays}></FontAwesomeIcon>Apr 2020 - Apr 2022</span>
+                                <p>Business Analyst (Student Job, Part-time)</p>
+                                <br></br>
+                                <p>During university, I worked at Look4SchoolsUK, an education platform. In a span of 2 years, 
+                                    I developed a webapp prototype for the company, which identified and prevented 
+                                    loopholes in some of its planned features and web flows. I also helped with ad-hoc 
+                                    tasks including <span className='underline'>data collection and analysis</span> on
+                                    UK school data.</p>
+                                <div className='tech-stack'>
+                                    <span>Python</span>
+                                    <span>Django</span>
+                                    <span>Excel & CSV</span>
+                                    <span>Data Analysis</span>
+                                    <span>Full-stack Development</span>
+                                    <span>Full-stack Development</span>
+                                    <span>Full-stack Development</span>
+                                </div>
+                            </div>
+                        </div>
+                    </Parallax>
+                    <Parallax speed={35}>
+                        <div className='exp-wrapper'>
+                            <div className='exp-content'>
+                                <p>I had a lot of fun building the prototype webapp for the company. Although I had little
+                                    web development experience in the past, I was able to quickly adapt by extensively
+                                    going through Django tutorials and documentation.</p>
+                                <br></br>
+                                <p>I was able to visualise the data I had collected from previous tasks and generate interactive
+                                    graphs with Chart.js, like the one below:</p>
+                            </div>
+                            <video autoPlay loop muted>
+                                <source src={l4s_demo} type='video/mp4'></source>
+                            </video>
+                        </div>
+                    </Parallax>
+                </ParallaxProvider>
             </Container>
             <Container id={"abt-me"}>
                 <div className='abt-me-container'>
