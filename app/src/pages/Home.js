@@ -20,7 +20,7 @@ const Home = () => {
                             <br></br>
                             <h1 className='intro-title'>I'm a Student Developer Turning Your Paperballs Into a Paperplane</h1>
                         </Parallax>
-                        <Parallax speed={10}>
+                        <Parallax speed={20}>
                             <p className='about'>I am currently pursuing a Computer Science degree at University College London, with 
                                 a special focus on data analysis and financial markets.</p>
                         </Parallax>
@@ -51,8 +51,6 @@ const Home = () => {
                                     <span>Excel & CSV</span>
                                     <span>Data Analysis</span>
                                     <span>Full-stack Development</span>
-                                    <span>Full-stack Development</span>
-                                    <span>Full-stack Development</span>
                                 </div>
                             </div>
                         </div>
@@ -71,10 +69,34 @@ const Home = () => {
                                 <source src={l4s_demo} type='video/mp4'></source>
                             </video>
                         </div>
+                        <br></br><br></br>
+                        <div className='exp-wrapper'>
+                            <div className='exp-content'>
+                                <h1 className=''>UCL Industry Exhange Network</h1>
+                                <span><FontAwesomeIcon icon={faCalendarDays}></FontAwesomeIcon>Oct 2021 - May 2022</span>
+                                <p>Software Engineer</p>
+                                <br></br>
+                                <p>I was fortunate to participate in the UCL Industry Exchange Network and worked on a 
+                                    Natural Language Processing team project with the NHS. Although not being well-versed in 
+                                    NLP, being able to think critically and learn quickly has helped me swiftly adapt to the 
+                                    environment, and contribute to the project, as well as solving obstacles along the way. 
+                                    Our solution is currently under evaluation and is a potential candidate to be distributed 
+                                    as software within the NHS frontlines in the future.</p>
+                                <div className='tech-stack'>
+                                    <span>Python</span>
+                                    <span>Django</span>
+                                    <span>Natural Language Processing</span>
+                                    <span>Full-stack Development</span>
+                                </div>
+                            </div>
+                        </div>
                     </Parallax>
                 </ParallaxProvider>
             </Container>
-            <Container id={"abt-me"}>
+            <Container id={"works-intro"}>
+                <h1 className=''>Selected Works</h1>
+            </Container>
+            <Container id={"works"}>
                 <div className='abt-me-container'>
                     <ParallaxProvider>
                         <Parallax speed={0}>
@@ -84,15 +106,8 @@ const Home = () => {
                                 I want to pursue a career in the financial market as a quantitative analyst, 
                                 and make use of the knowledge and mindset I acquired along my SWE jounrey.</p>
                         </Parallax>
-                        <Parallax speed={50}>
-                            
-                        </Parallax>
                     </ParallaxProvider>
                 </div>
-            </Container>
-            <Container id={"works-intro"}>
-                <h1 className='h1-small'>throughout university, I've worked on various projects that I'm
-                really proud of</h1>
             </Container>
         </div>
     );

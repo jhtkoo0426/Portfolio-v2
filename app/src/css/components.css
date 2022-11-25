@@ -26,9 +26,10 @@
 /* Look4SchoolsUK Section CSS */
 .container#look4schoolsuk {
     width: 100%;
+    height: 130vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 5%;
+    grid-column-gap: 5%;
     color: var(--light-purple);
 }
 
@@ -76,9 +77,28 @@
     margin-top: 5%;
 }
 
+
+/* Selected works section CSS */
+.container#works-intro {
+    height: 20vh;
+}
+
+.container#works-intro > h1 {
+    font-family: 'NoahBold';
+    font-size: var(--h1-mid);
+    color: var(--white);
+}
+
+.container#works {
+
+}
+
+
+/* Tech stack component CSS */
 .tech-stack {
     word-break: break-all;
 }
+
 .tech-stack > span {
     display: inline-block;
     margin: 5px;
@@ -89,35 +109,6 @@
     color: var(--purple);
 }
 
-.container#intro {
-    height: 50vh;
-}
-
-.container#abt-me {
-    height: 40vh;
-}
-
-.container#connect {
-    height: 30vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.container#connect > .connect-content {
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.container#connect > .connect-content > .opport {
-    background-color: aqua;
-}
-
-.container#works-intro { height: 20vh; }
 
 /* Anchor CSS */
 .anchor {
