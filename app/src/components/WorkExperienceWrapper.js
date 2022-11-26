@@ -12,7 +12,6 @@ const WorkExperienceWrapper = ({ image, vid, company_name, duration, role, child
                 {
                     duration != null &&
                     <span className='exp-duration'>
-                        <FontAwesomeIcon icon={faCalendarDays}></FontAwesomeIcon>
                         {duration}
                     </span>
                 }
@@ -27,7 +26,7 @@ const WorkExperienceWrapper = ({ image, vid, company_name, duration, role, child
             </div>
             {
                 vid != null &&
-                <video autoplay loop muted>
+                <video autoPlay loop muted>
                     <source src={vid} type="video/mp4"></source>
                 </video>
             }

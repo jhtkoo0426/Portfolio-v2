@@ -52,7 +52,7 @@ const Home = () => {
             <Container id={"experience-intro"}>
                 <h1 className=''>Work Experience</h1>
             </Container>
-            <Container id={"look4schoolsuk"}>
+            <Container id={"work-experience"}>
                 <ParallaxProvider>
                     <Parallax speed={10}>
                         <WorkExperienceWrapper
@@ -79,34 +79,36 @@ const Home = () => {
                             role={null}
                             tech_stack={[]}
                         >
-                            <p>I had a lot of fun building the prototype webapp for the company. Although I had little
-                                web development experience in the past, I was able to quickly adapt by extensively
-                                going through Django tutorials and documentation.</p>
+                            <p>I really enjoyed the process of building the prototype webapp for the company. Although 
+                                I had little web development experience back then, I was able to adapt quickly with
+                                the extensive Django tutorials and documentation.</p>
                             <br></br>
                             <p>I was able to visualise the data I had collected from previous tasks and generate interactive
                                 graphs with Chart.js, like the one below:</p>
                         </WorkExperienceWrapper>
                         <br></br><br></br>
-                        <div className='exp-wrapper'>
-                            <div className='exp-content'>
-                                <h1 className=''>UCL Industry Exhange Network</h1>
-                                <span><FontAwesomeIcon icon={faCalendarDays}></FontAwesomeIcon>Oct 2021 - May 2022</span>
-                                <p>Software Engineer</p>
-                                <br></br>
-                                <p>I was fortunate to participate in the UCL Industry Exchange Network and worked on a 
-                                    Natural Language Processing team project with the NHS. Although not being well-versed in 
-                                    NLP, being able to think critically and learn quickly has helped me swiftly adapt to the 
-                                    environment, and contribute to the project, as well as solving obstacles along the way. 
-                                    Our team delivered our solution and hopes that it could someday be distributed as within 
-                                    the NHS frontlines to reduce their workload.</p>
-                                <div className='tech-stack'>
-                                    <span>Python</span>
-                                    <span>Django</span>
-                                    <span>Natural Language Processing</span>
-                                    <span>Full-stack Development</span>
-                                </div>
-                            </div>
-                        </div>
+                        <WorkExperienceWrapper
+                            image={null}
+                            vid={null}
+                            company_name={"UCL Industry Exchange Network"}
+                            duration={"Oct 2021 - May 2022"}
+                            role={"Software Engineer"}
+                            tech_stack={["Python", "Django", "Natural Language Processing", "Full-stack development"]}
+                        >
+                            <p>I was fortunate to participate in the UCL Industry Exchange Network with 2 teammates on a
+                                Natural Language Processing project. We were presented a problem by our client at the
+                                beginning and gradually worked towards a deployable solution. Through gathering requirements,
+                                building prototypes and maintain frequent updates, our client was able to keep track of our
+                                process and made fine changes where appropriate.</p>
+                            <br></br>
+                            <p>The project problem itself was challenging for me. Although NLP was new to me at the time, 
+                                being able to think critically and apply my machine learning knowledge occasionally has 
+                                helped me adapt to the field quickly and contribute to the project, solving 
+                                obstacles along the way.</p>
+                            <br></br>
+                            <p>In the end, our team successfully delivered our solution on time and we hope that it could 
+                                someday be distributed as within  the NHS frontlines to reduce their workload.</p>
+                        </WorkExperienceWrapper>
                     </Parallax>
                 </ParallaxProvider>
             </Container>
@@ -114,32 +116,26 @@ const Home = () => {
                 <h1 className=''>Selected Works</h1>
             </Container>
             <Container id={"works"}>
-                <ParallaxProvider>
-                    <Parallax speed={5}>
-                        <div className='selected-work' id='okane'>
-                            <p className='project-title'>01 - Okane</p>
-                            <p>A naive trading algorithm that I am building which embeds machine learning technqiues into
-                                fundamental and technical analysis of stock symbols. The project was inspired by the 6th 
-                                Hexcambridge Hackathon that I participated with my friends where we attempted to develop 
-                                an arbitrage algorithm.</p><br></br>
-                            <p>Okane queries financial data from finnhub.io to determine the market's attitude  towards 
-                                a specific stock (overvalued or undervalued). I used sentiment analysis to process news
-                                summaries of companies and time series forecasting to predict the future overall price 
-                                trend of a stock.</p><br></br>
-                            <p>Although naive, Okane can provide me with technical insight into the potential of
-                                a stock using data analysis very quickly. This simple automation could be further developed
-                                into a recommendation system that may make better decisions on trading strategies than myself :).</p>
-                        </div>
-                    </Parallax>
-                    <Parallax speed={25}>
-                        <div className='selected-work' id='okane'>
-                            <p className='project-title'>02 - Pathfinder</p>
-                            <p>An interactive web application that visualises the route-finding process between 2 London 
-                                Underground stations. The project is based off one of my university couresworks on data
-                                structures and algorithms.</p>
-                        </div>
-                    </Parallax>
-                </ParallaxProvider>
+                <div className='selected-work' id='okane'>
+                    <p className='project-title'>01 - Okane</p>
+                    <p>A naive trading algorithm that I am building which embeds machine learning technqiues into
+                        fundamental and technical analysis of stock symbols. The project was inspired by the 6th 
+                        Hexcambridge Hackathon that I participated with my friends where we attempted to develop 
+                        an arbitrage algorithm.</p><br></br>
+                    <p>Okane queries financial data from finnhub.io to determine the market's attitude  towards 
+                        a specific stock (overvalued or undervalued). I used sentiment analysis to process news
+                        summaries of companies and time series forecasting to predict the future overall price 
+                        trend of a stock.</p><br></br>
+                    <p>Although naive, Okane can provide me with technical insight into the potential of
+                        a stock using data analysis very quickly. This simple automation could be further developed
+                        into a recommendation system that may make better decisions on trading strategies than myself :).</p>
+                </div>
+                <div className='selected-work' id='okane'>
+                    <p className='project-title'>02 - Pathfinder</p>
+                    <p>An interactive web application that visualises the route-finding process between 2 London 
+                        Underground stations. The project is based off one of my university couresworks on data
+                        structures and algorithms.</p>
+                </div>
             </Container>
             <Container id={"contacts"}>
                 <div className='contacts-container'>
