@@ -1,30 +1,68 @@
 /* CSS for React component: WorkExperienceWrapper.js */
-/* Grid positions hardcoded for now */
-.exp-wrapper:nth-child(1) {grid-row: 1 / 5; }
-.exp-wrapper:nth-child(2) {grid-row: 2 / 5; }
+.exp-wrapper {
+    display: grid;
+    align-items: center;
+}
+
+/* Custom layouts for different work experiences */
+.exp-wrapper:nth-child(1) > .exp-content {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.exp-wrapper:nth-child(1) > .exp-video {
+    grid-row: 1;
+    grid-column: 1;
+}
+
 
 /* Work Experience Wrapper CSS */
-/* .exp-wrapper { border: 1px solid var(--pale-purple); } */
-
 .exp-wrapper > .exp-image {
     max-width: 100%;
     max-height: 100%;
     object-fit: contain;
+    border-radius: 10px;
+    border: 4px solid var(--dark-grey);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 6px;
 }
 
-.exp-wrapper > video { width: 100%; }
-
-.exp-wrapper > .exp-content { padding: 5%; }
-.exp-wrapper > .exp-content > h1 {
-    font-family: 'NoahBold';
-    font-size: var(--h1-e-small);
-    color: var(--white);
+.exp-wrapper > .exp-video {
+    width: 100%;
+    border-radius: 10px;
+    border: 4px solid var(--dark-grey);
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 3px 6px;
 }
 
-.exp-wrapper > .exp-content > span, p { font-size: var(--p-mid); }
-.exp-wrapper > .exp-content > span {
-    padding: 10px 0;
-    color: var(--white);
+.exp-wrapper > .exp-content { padding: 5% 0; }
+.exp-wrapper > .exp-content > p { font-size: var(--p-mid); }
+.exp-wrapper > .exp-content > .exp-content-title {
+    font-family: 'InterBold';
+    font-size: var(--h1-small);
+    color: var(--dark-grey);
 }
 
-.exp-wrapper > .exp-content > .tech-stack { margin-top: 5%; }
+.exp-wrapper > .exp-content > span { display: flex; align-items: center;}
+.exp-wrapper > .exp-content > span > .exp-link {
+    text-decoration: none;
+    transition: all .5s ease;
+    font-family: 'NoahReg';
+    font-size: var(--p-mid);
+    color: var(--dark-grey);
+}
+
+.arrow {
+    margin-left: 20px;
+    transition: all .5s ease;
+    visibility: hidden;
+    opacity: 0;
+    color: var(--dark-grey);
+}
+
+.exp-wrapper > .exp-content > span > .exp-link:hover {
+    transform: translateX(10px);
+}
+.exp-wrapper > .exp-content > span > .exp-link:hover + .arrow {
+    transform: translateX(10px);
+    visibility: visible;
+    opacity: 1;
+}
