@@ -60,49 +60,6 @@
     color: var(--light-purple);
 }
 
-.container#look4schoolsuk > div > .exp-wrapper {
-    border: 1px solid var(--light-purple);
-}
-
-.container#look4schoolsuk > div > .exp-wrapper:nth-child(1) {
-    grid-row: 1 / 5;
-}
-.container#look4schoolsuk > div > .exp-wrapper:nth-child(2) {
-    grid-row: 2 / 5;
-}
-
-.container#look4schoolsuk > div > .exp-wrapper > img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;
-}
-
-.container#look4schoolsuk > div > .exp-wrapper > video {
-    width: 100%;
-}
-
-.container#look4schoolsuk > div > .exp-wrapper > .exp-content {
-    padding: 5%;
-}
-
-.container#look4schoolsuk > div > .exp-wrapper > .exp-content > h1 {
-    font-family: 'NoahBold';
-    font-size: var(--h1-small);
-    color: var(--white);
-}
-
-.container#look4schoolsuk > div > .exp-wrapper > .exp-content > span, p {
-    font-size: var(--p-mid);
-}
-
-.container#look4schoolsuk > div > .exp-wrapper > .exp-content > span {
-    padding: 10px 0;
-    color: var(--white);
-}
-
-.container#look4schoolsuk > div > .exp-wrapper > .exp-content > .tech-stack {
-    margin-top: 5%;
-}
 
 
 /* Selected works section CSS */

@@ -1,5 +1,6 @@
 import Anchor from '../components/Anchor';
 import Container from '../components/Container';
+import WorkExperienceWrapper from '../components/WorkExperienceWrapper';
 
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
@@ -8,12 +9,12 @@ import l4s_demo from "../videos/l4s-demo.mp4";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays, faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
 
+import "../css/workExperienceWrapper.css";
+
 
 const Home = () => {
     function copy_email() {
         navigator.clipboard.writeText("jhtkbusiness@gmail.com");
-
-
     }
 
     return (
@@ -54,42 +55,37 @@ const Home = () => {
             <Container id={"look4schoolsuk"}>
                 <ParallaxProvider>
                     <Parallax speed={10}>
-                        <div className='exp-wrapper'>
-                            <img src={l4s_landing} alt=""></img>
-                            <div className='exp-content'>
-                                <h1 className=''>Look4SchoolsUK</h1>
-                                <span><FontAwesomeIcon icon={faCalendarDays}></FontAwesomeIcon>Apr 2020 - Apr 2022</span>
-                                <p>Business Analyst (Student Job, Part-time)</p>
-                                <br></br>
-                                <p>During university, I worked at Look4SchoolsUK, an education platform. In a span of 2 years, 
-                                    I developed a webapp prototype for the company, which identified and prevented 
-                                    loopholes in some of its planned features and web flows. I also helped with ad-hoc 
-                                    tasks including <span className='underline'>data collection and analysis</span> on
-                                    UK school data.</p>
-                                <div className='tech-stack'>
-                                    <span>Python</span>
-                                    <span>Django</span>
-                                    <span>Excel & CSV</span>
-                                    <span>Data Analysis</span>
-                                    <span>Full-stack Development</span>
-                                </div>
-                            </div>
-                        </div>
+                        <WorkExperienceWrapper
+                            image={l4s_landing}
+                            company_name={"Look4SchoolsUK"}
+                            duration={"Apr 2020 - Apr 2022"}
+                            role={"Business Analyst (Student Job, Part-time)"}
+                            tech_stack={["Python", "Django", "Excel & CSV", "Data Analysis", "Full-stack development"]}
+                        >
+                            {/* Role Description as props.children */}
+                            <p>During university, I worked at Look4SchoolsUK, an education platform. In a span of 2 years, 
+                                I developed a webapp prototype for the company, which identified and prevented 
+                                loopholes in some of its planned features and web flows. I also helped with ad-hoc 
+                                tasks including <span className='underline'>data collection and analysis</span> on
+                                UK school data.</p>
+                        </WorkExperienceWrapper>
                     </Parallax>
                     <Parallax speed={35}>
-                        <div className='exp-wrapper'>
-                            <div className='exp-content'>
-                                <p>I had a lot of fun building the prototype webapp for the company. Although I had little
-                                    web development experience in the past, I was able to quickly adapt by extensively
-                                    going through Django tutorials and documentation.</p>
-                                <br></br>
-                                <p>I was able to visualise the data I had collected from previous tasks and generate interactive
-                                    graphs with Chart.js, like the one below:</p>
-                            </div>
-                            <video autoPlay loop muted>
-                                <source src={l4s_demo} type='video/mp4'></source>
-                            </video>
-                        </div>
+                        <WorkExperienceWrapper
+                            image={null}
+                            vid={l4s_demo}
+                            company_name={null}
+                            duration={null}
+                            role={null}
+                            tech_stack={[]}
+                        >
+                            <p>I had a lot of fun building the prototype webapp for the company. Although I had little
+                                web development experience in the past, I was able to quickly adapt by extensively
+                                going through Django tutorials and documentation.</p>
+                            <br></br>
+                            <p>I was able to visualise the data I had collected from previous tasks and generate interactive
+                                graphs with Chart.js, like the one below:</p>
+                        </WorkExperienceWrapper>
                         <br></br><br></br>
                         <div className='exp-wrapper'>
                             <div className='exp-content'>
