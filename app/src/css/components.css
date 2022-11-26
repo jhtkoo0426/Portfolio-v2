@@ -117,9 +117,20 @@
 }
 
 .container#works {
-
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5%;
 }
 
+.selected-work {
+    color: var(--light-purple);
+}
+
+.selected-work > .project-title {
+    font-family: 'InterBold';
+    font-size: var(--p-large);
+    color: var(--white);
+}
 
 /* Tech stack component CSS */
 .tech-stack {
@@ -178,6 +189,8 @@
 .container#contacts > .contacts-container > .contacts-text > .reach-out > .cpy-email {
     margin-left: 5%;
 }
+
+
 /* Anchor CSS */
 .anchor {
     text-decoration: none;

@@ -13,7 +13,7 @@ const Home = () => {
     function copy_email() {
         navigator.clipboard.writeText("jhtkbusiness@gmail.com");
 
-        
+
     }
 
     return (
@@ -118,9 +118,32 @@ const Home = () => {
                 <h1 className=''>Selected Works</h1>
             </Container>
             <Container id={"works"}>
-                <div className='selected-work' id='okane'>
-                    
-                </div>
+                <ParallaxProvider>
+                    <Parallax speed={5}>
+                        <div className='selected-work' id='okane'>
+                            <p className='project-title'>01 - Okane</p>
+                            <p>A naive trading algorithm that I am building which embeds machine learning technqiues into
+                                fundamental and technical analysis of stock symbols. The project was inspired by the 6th 
+                                Hexcambridge Hackathon that I participated with my friends where we attempted to develop 
+                                an arbitrage algorithm.</p><br></br>
+                            <p>Okane queries financial data from finnhub.io to determine the market's attitude  towards 
+                                a specific stock (overvalued or undervalued). I used sentiment analysis to process news
+                                summaries of companies and time series forecasting to predict the future overall price 
+                                trend of a stock.</p><br></br>
+                            <p>Although naive, Okane can provide me with technical insight into the potential of
+                                a stock using data analysis very quickly. This simple automation could be further developed
+                                into a recommendation system that may make better decisions on trading strategies than myself :).</p>
+                        </div>
+                    </Parallax>
+                    <Parallax speed={25}>
+                        <div className='selected-work' id='okane'>
+                            <p className='project-title'>02 - Pathfinder</p>
+                            <p>An interactive web application that visualises the route-finding process between 2 London 
+                                Underground stations. The project is based off one of my university couresworks on data
+                                structures and algorithms.</p>
+                        </div>
+                    </Parallax>
+                </ParallaxProvider>
             </Container>
             <Container id={"contacts"}>
                 <div className='contacts-container'>

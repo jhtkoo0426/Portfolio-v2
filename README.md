@@ -22,3 +22,6 @@
 ## Local Deployment
 ```cd portfolio-app```
 ```npm start```
+
+### Disclaimer
+Design insipration taken from [https://www.adriengervaix.com](https://www.adriengervaix.com).
