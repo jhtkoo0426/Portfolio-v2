@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.361ad816.css",
-    "main.js": "/static/js/main.b78c4d1a.js",
+    "main.css": "/static/css/main.ef399b9b.css",
+    "main.js": "/static/js/main.1d82e9e5.js",
     "static/js/787.c1112931.chunk.js": "/static/js/787.c1112931.chunk.js",
     "static/media/l4s-landing-demo.mp4": "/static/media/l4s-landing-demo.bd5a0468ef8842321964.mp4",
     "static/media/Inter-Bold.ttf": "/static/media/Inter-Bold.a73db89c43e44ca8f5e0.ttf",
@@ -12,12 +12,12 @@
     "static/media/l4s_landing.jpg": "/static/media/l4s_landing.9c00b2c1e031c8ad1e41.jpg",
     "static/media/Noah Head Regular.otf": "/static/media/Noah Head Regular.d40ef2cfdefaeab4d60d.otf",
     "index.html": "/index.html",
-    "main.361ad816.css.map": "/static/css/main.361ad816.css.map",
-    "main.b78c4d1a.js.map": "/static/js/main.b78c4d1a.js.map",
+    "main.ef399b9b.css.map": "/static/css/main.ef399b9b.css.map",
+    "main.1d82e9e5.js.map": "/static/js/main.1d82e9e5.js.map",
     "787.c1112931.chunk.js.map": "/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.361ad816.css",
-    "static/js/main.b78c4d1a.js"
+    "static/css/main.ef399b9b.css",
+    "static/js/main.1d82e9e5.js"
   ]
 }
