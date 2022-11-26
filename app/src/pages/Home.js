@@ -21,8 +21,23 @@ const Home = () => {
                             <h1 className='intro-title'>I'm a Student Developer Turning Your Paperballs Into a Paperplane</h1>
                         </Parallax>
                         <Parallax speed={20}>
-                            <p className='about'>I am currently pursuing a Computer Science degree at University College London, with 
-                                a special focus on data analysis and financial markets.</p>
+                            <p className='about'>I am currently pursuing a <span className='span underline'>Computer Science</span> degree
+                             at University College London, with a special focus on data analysis and financial markets.</p>
+                        </Parallax>
+                    </ParallaxProvider>
+                </div>
+            </Container>
+            <Container id={"about-me-intro"}>
+                <h1 className=''>About Me</h1>
+            </Container>
+            <Container id={"about-me"}>
+                <div className='abt-me-container'>
+                    <ParallaxProvider>
+                        <Parallax speed={0}>
+                            <p>Outside of university, I enjoy learning new things. At the moment, I'm deep-diving into machine 
+                                learning and working on a side project related to <span className='span underline'>algorithmic 
+                                trading</span>. In the future, I want to pursue a career in the financial market as a 
+                                quantitative analyst, and make use of the knowledge and mindset I acquired along my SWE jounrey.</p>
                         </Parallax>
                     </ParallaxProvider>
                 </div>
@@ -97,17 +112,7 @@ const Home = () => {
                 <h1 className=''>Selected Works</h1>
             </Container>
             <Container id={"works"}>
-                <div className='abt-me-container'>
-                    <ParallaxProvider>
-                        <Parallax speed={0}>
-                            <p className='p-mid'>Outside of university, I enjoy learning new things 😀</p>
-                            <p>At the moment, I'm deep-diving into machine learning and working on a side project 
-                                related to <span className='underline'>algorithmic trading</span>. In the future, 
-                                I want to pursue a career in the financial market as a quantitative analyst, 
-                                and make use of the knowledge and mindset I acquired along my SWE jounrey.</p>
-                        </Parallax>
-                    </ParallaxProvider>
-                </div>
+                
             </Container>
         </div>
     );

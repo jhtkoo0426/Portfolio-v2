@@ -11,6 +11,7 @@
     --black: #000;
     --white: #fff;
     --dark-grey: #0b131d;
+    --pink: #f5a7cb;
     --purple: #420FE7;
     --light-purple: #bdbef7;
 
@@ -162,7 +163,7 @@ p {
 .landing-grid > div > .intro {
     font-family: 'SSProReg';
     font-size: var(--p-large);
-    color: var(--white);
+    color: var(--pink);
 }
 
 .landing-grid > div > .intro-title {

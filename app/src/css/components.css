@@ -1,4 +1,13 @@
 /* CSS File for React.js components */
+/* spans */
+.span {
+    color: var(--pink);
+}
+
+.span.underline {
+    border-bottom: 1px solid var(--pink);
+}
+
 /* Container.js react component */
 .container {
     padding: 0 12.5%;
@@ -10,6 +19,24 @@
     flex-direction: column;
     justify-content: center;
 }
+
+/* About me section CSS */
+.container#about-me-intro > h1 {
+    margin-left: 10vw;
+    font-family: 'NoahBold';
+    font-size: var(--h1-mid);
+    color: var(--white);
+}
+
+.container#about-me {
+    height: 60vh;
+    margin-left: 10vw;
+    line-height: 160%;
+    font-family: 'InterReg';
+    font-size: var(--p-mid);
+    color: var(--light-purple);
+}
+
 
 /* "Work Experience" intro CSS */
 .container#experience-intro {
