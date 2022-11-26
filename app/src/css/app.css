@@ -8,13 +8,10 @@
 }
 
 :root {
-    --black: #000;
     --white: #fff;
     --dark-grey: #0b131d;
-    --yg: #faa2d5;
-    --purple: #420FE7;
-    --light-purple: #bdbef7;
-    --pale-purple: #bdbef781;
+    --light-grey: #F0F0F2;
+    --purple: #420FE7;  /* #420FE7 */
 
     --p-large: calc(10px + 0.85vw);
     --p-mid: calc(10px + 0.55vw);
@@ -55,19 +52,26 @@
 }
 
 p {
+    line-height: 160%;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 /* Styling for spans (text highlighting & underlining) */
-.span { color: var(--yg); }
-.span.underline { border-bottom: 1px solid var(--yg); }
+span { color: var(--dark-grey); }
+span.purple { color: var(--purple); }
 
 /* Styling for headers */
 .subtitle {
     font-family: 'NoahBold';
     font-size: var(--h1-mid);
-    color: var(--white);
+    color: var(--dark-grey);
+}
+
+.large-text {
+    font-family: 'NoahBold';
+    font-size: var(--h1-e-small);
+    color: var(--dark-grey);
 }
 
 
@@ -79,11 +83,11 @@ p {
   
 ::-webkit-scrollbar-track {
     border: solid 3px transparent;
-    background: var(--purple);
+    background: var(--light-grey);
 }
   
 ::-webkit-scrollbar-thumb {
-    background-color: var(--white);
+    background-color: var(--dark-grey);
     border-radius: 10px;
     border: solid 3px transparent;
     background-clip: content-box;
@@ -94,7 +98,7 @@ p {
 .app {
     width: 100%;
     height: 100%;
-    background-color: var(--purple);
+    background-color: var(--light-grey);
 }
 
 /* Topnav CSS */
@@ -114,7 +118,7 @@ p {
     text-decoration: none;
     font-family: 'InterBold';
     font-size: 1.8rem;
-    color: var(--white);
+    color: var(--dark-grey);
 }
 
 .topnav-menu > a {
@@ -122,18 +126,18 @@ p {
     margin: 0 20px;
     transition: all .25s ease-in-out;
     font-size: var(--p-large);
-    color: var(--white);
+    color: var(--dark-grey);
 }
 
 .topnav-menu > a:hover {
-    color: var(--yg);
+    color: var(--purple);
 }
 
 /* Botnav CSS */
 .botnav {
     height: 10vh;
     text-align: center;
-    color: var(--white);
+    color: var(--dark-grey);
 }
 
 .botnav > p {
@@ -144,11 +148,11 @@ p {
     margin: 5px 15px;
     transition: all .25s ease;
     font-size: var(--p-mid);
-    color: var(--white);
+    color: var(--dark-grey);
 }
 
 .botnav > .anchor:hover {
-    color: var(--yg);
+    color: var(--purple);
 }
 
 

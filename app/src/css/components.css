@@ -1,11 +1,11 @@
 /* CSS File for React.js components */
 /* Container.js react component */
 .container {
-    padding: 0 12.5%;
+    padding: 0 10%;
 }
 
 .container#landing {
-    height: 120vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -13,19 +13,19 @@
 
 .container#landing > div > .intro {
     font-family: 'InterReg';
-    font-size: var(--p-mid);
-    color: var(--yg);
+    font-size: var(--p-large);
+    color: var(--dark-grey);
 }
 
 .container#landing > div > .intro-title {
+    width: 80%;
     font-family: 'NoahBold';
     font-size: var(--h1-large);
-    color: var(--white);
+    color: var(--dark-grey);
 }
 
 .container#landing > div > .about {
     width: 40%;
-    margin-right: 10%;
     float: right;
     line-height: 180%;
     font-family: 'InterReg';
@@ -39,11 +39,10 @@
 }
 
 /* About me section CSS */
-.container#about-me-intro > h1 { margin-left: 10vw; }
-
 .container#about-me {
-    height: 60vh;
-    margin-left: 10vw;
+    width: 80%;
+    height: 80vh;
+    margin: 0 10%;
     line-height: 160%;
     font-family: 'InterReg';
     font-size: var(--p-mid);
@@ -58,28 +57,25 @@
 /* Work Experience Section - L4S work experience CSS */
 .container#work-experience {
     width: 100%;
-    height: 140vh;
+    height: 90vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-column-gap: 5%;
-    color: var(--light-purple);
+    grid-gap: 10%;
 }
 
 /* Selected works section CSS */
-.container#works-intro { height: 20vh; }
+.container#works-intro {
+    height: 15vh;
+    margin-left: 10%;
+}
 
 .container#works {
+    height: 50vh;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 5%;
 }
 
-.selected-work { color: var(--light-purple); }
-.selected-work > .project-title {
-    font-family: 'InterBold';
-    font-size: var(--p-large);
-    color: var(--white);
-}
 
 /* Tech stack component CSS */
 .tech-stack { word-break: break-all; }
@@ -90,9 +86,11 @@
     white-space: nowrap;
     border-radius: 6px;
     padding: 3px 10px;
-    background-color: var(--light-purple);
-    color: var(--purple);
+    font-family: 'Inter';
+    background-color: var(--purple);
+    color: var(--white);
 }
+
 
 /* Contacts CSS */
 .container#contacts {
@@ -106,18 +104,26 @@
 
 .container#contacts > .contacts-container > .contacts-text {
     line-height: 200%;
-    color: var(--light-purple);
+    font-size: var(--p-mid);
 }
 
 .container#contacts > .contacts-container > .contacts-text > .reach-out {
     width: 70%;
     margin: 3vh 0;
+    padding: 2vh 2vw;
     display: flex;
     align-items: center;
     transition: all .25s ease-in-out;
-    border: none;
+    border: 1px solid var(--dark-grey);
     font-family: 'SSProReg';
+    font-size: var(--p-mid);
     background-color: transparent;
+    color: var(--dark-grey);
+}
+
+.container#contacts > .contacts-container > .contacts-text > .reach-out:hover {
+    border: 1px solid var(--purple);
+    background-color: var(--purple);
     color: var(--white);
 }
 
