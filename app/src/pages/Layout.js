@@ -45,10 +45,11 @@ const Layout = () => {
     // function li(a, b, n) {
     //     return (1 - n) * a + n * b;
     // }
-  
+
     return (
       /* Topnav + content + botnav wrapper for pages */
       <div className="app">
+        <div className="cursor"></div>
         <nav className="topnav">
           <Link to="/">j.</Link>
           <div className="topnav-menu">

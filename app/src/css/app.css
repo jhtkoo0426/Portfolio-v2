@@ -64,15 +64,35 @@ p {
 .span.underline { border-bottom: 1px solid var(--yg); }
 
 /* Styling for headers */
-.title {
-    
-}
-
 .subtitle {
     font-family: 'NoahBold';
     font-size: var(--h1-mid);
     color: var(--white);
 }
+
+
+/* Scrollbar CSS */
+::-webkit-scrollbar {
+    width: 14px;
+    background-color: transparent;
+}
+  
+::-webkit-scrollbar-track {
+    border: solid 3px transparent;
+    background: var(--purple);
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--white);
+    border-radius: 10px;
+    border: solid 3px transparent;
+    background-clip: content-box;
+}
+  
+::-webkit-scrollbar-thumb:hover {
+    
+}
+
 
 /* CSS for app container layout */
 .app {

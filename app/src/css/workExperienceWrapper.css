@@ -4,7 +4,7 @@
 .exp-wrapper:nth-child(2) {grid-row: 2 / 5; }
 
 /* Work Experience Wrapper CSS */
-.exp-wrapper { border: 1px solid var(--pale-purple); }
+/* .exp-wrapper { border: 1px solid var(--pale-purple); } */
 
 .exp-wrapper > .exp-image {
     max-width: 100%;
@@ -12,12 +12,9 @@
     object-fit: contain;
 }
 
-.exp-wrapper > video {
-    width: 100%;
-}
+.exp-wrapper > video { width: 100%; }
 
 .exp-wrapper > .exp-content { padding: 5%; }
-
 .exp-wrapper > .exp-content > h1 {
     font-family: 'NoahBold';
     font-size: var(--h1-e-small);
