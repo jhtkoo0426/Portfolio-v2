@@ -1,16 +1,10 @@
-
-.exp-wrapper:nth-child(1) {
-    grid-row: 1 / 5;
-}
-
-.exp-wrapper:nth-child(2) {
-    grid-row: 2 / 5;
-}
+/* CSS for React component: WorkExperienceWrapper.js */
+/* Grid positions hardcoded for now */
+.exp-wrapper:nth-child(1) {grid-row: 1 / 5; }
+.exp-wrapper:nth-child(2) {grid-row: 2 / 5; }
 
 /* Work Experience Wrapper CSS */
-.exp-wrapper {
-    border: 1px solid var(--light-purple);
-}
+.exp-wrapper { border: 1px solid var(--light-purple); }
 
 .exp-wrapper > .exp-image {
     max-width: 100%;
@@ -18,13 +12,9 @@
     object-fit: contain;
 }
 
-.exp-wrapper > video {
-    width: 100%;
-}
+.exp-wrapper > video {width: 100%; }
 
-.exp-wrapper > .exp-content {
-    padding: 5%;
-}
+.exp-wrapper > .exp-content { padding: 5%; }
 
 .exp-wrapper > .exp-content > h1 {
     font-family: 'NoahBold';
@@ -32,15 +22,10 @@
     color: var(--white);
 }
 
-.exp-wrapper > .exp-content > span, p {
-    font-size: var(--p-mid);
-}
-
+.exp-wrapper > .exp-content > span, p { font-size: var(--p-mid); }
 .exp-wrapper > .exp-content > span {
     padding: 10px 0;
     color: var(--white);
 }
 
-.exp-wrapper > .exp-content > .tech-stack {
-    margin-top: 5%;
-}
+.exp-wrapper > .exp-content > .tech-stack { margin-top: 5%; }
