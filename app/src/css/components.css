@@ -5,10 +5,37 @@
 }
 
 .container#landing {
-    height: 100vh;
+    height: 120vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+
+.container#landing > div > .intro {
+    font-family: 'InterReg';
+    font-size: var(--p-mid);
+    color: var(--yg);
+}
+
+.container#landing > div > .intro-title {
+    font-family: 'NoahBold';
+    font-size: var(--h1-large);
+    color: var(--white);
+}
+
+.container#landing > div > .about {
+    width: 40%;
+    margin-right: 10%;
+    float: right;
+    line-height: 180%;
+    font-family: 'InterReg';
+    font-size: var(--p-mid);
+    color: var(--light-purple);
+}
+
+.container#landing > div > .about > .email-cpy {
+    padding: 20px 40px;
+    outline: 1px solid var(--grey);
 }
 
 /* About me section CSS */

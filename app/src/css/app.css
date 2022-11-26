@@ -88,10 +88,6 @@ p {
     border: solid 3px transparent;
     background-clip: content-box;
 }
-  
-::-webkit-scrollbar-thumb:hover {
-    
-}
 
 
 /* CSS for app container layout */
@@ -155,63 +151,16 @@ p {
     color: var(--yg);
 }
 
-/* Homepage CSS */
-.landing-grid {
-    width: 100%;
-}
-
-.landing-grid > div > .intro {
-    font-family: 'InterReg';
-    font-size: var(--p-mid);
-    color: var(--yg);
-}
-
-.landing-grid > div > .intro-title {
-    font-family: 'NoahBold';
-    font-size: var(--h1-large);
-    color: var(--white);
-}
-
-.landing-grid > div > .about {
-    width: 40%;
-    margin-right: 10%;
-    float: right;
-    line-height: 180%;
-    font-family: 'InterReg';
-    font-size: var(--p-mid);
-    color: var(--light-purple);
-}
-
-.landing-grid > div > .about > .email-cpy {
-    padding: 20px 40px;
-    outline: 1px solid var(--grey);
-}
-
-
 
 /* Handling mobile responsiveness */
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) { }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
-    .landing-container > .intro-grid {
-        grid-template-columns: 100%;
-    }    
-
-    .intro-container {
-        padding: 0 12.5%;
-        grid-template-columns: 100%;
-    }
-
-    .intro-container > .skillset {
-        margin: 5vh 0;
-    }
-}
+@media only screen and (max-width: 992px) { }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
-}
+@media only screen and (max-width: 768px) { }
 
 /* Extra Small Devices, Phones */ 
 @media only screen and (max-width: 480px) { }

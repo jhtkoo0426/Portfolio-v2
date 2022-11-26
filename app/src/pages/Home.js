@@ -21,19 +21,17 @@ const Home = () => {
     return (
         <div className='homepage'>
             <Container id={"landing"}>
-                <div className='landing-grid'>
-                    <ParallaxProvider>
-                        <Parallax speed={0}>
-                            <p className='intro'>Hi there, I'm Justin!</p>
-                            <br></br>
-                            <h1 className='intro-title'>I'm a Student Developer Turning Your Paperballs Into a Paperplane</h1>
-                        </Parallax>
-                        <Parallax speed={20}>
-                            <p className='about'>I am currently pursuing a <span className='span underline'>Computer Science</span> degree
-                             at University College London, with a special focus on data analysis and financial markets.</p>
-                        </Parallax>
-                    </ParallaxProvider>
-                </div>
+                <ParallaxProvider>
+                    <Parallax speed={0}>
+                        <p className='intro'>Hi there, I'm Justin!</p>
+                        <br></br>
+                        <h1 className='intro-title'>I'm a Student Developer Turning Your Paperballs Into a Paperplane</h1>
+                    </Parallax>
+                    <Parallax speed={20}>
+                        <p className='about'>I am currently pursuing a <span className='span underline'>Computer Science</span> degree
+                            at University College London, with a special focus on data analysis and financial markets.</p>
+                    </Parallax>
+                </ParallaxProvider>
             </Container>
             <Container id={"about-me-intro"}>
                 <h1 className='subtitle'>About Me</h1>
