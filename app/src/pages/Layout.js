@@ -52,7 +52,12 @@ const Layout = () => {
         <nav className="topnav">
           <Link to="/">j.</Link>
           <div className="topnav-menu">
-              
+            <Anchor href={"https://www.linkedin.com/in/justin-koo-29bb831b2/"}>
+              <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
+            </Anchor>
+            <Anchor href={"https://github.com/jhtkoo0426"}>
+              <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+            </Anchor>
           </div>
         </nav>  
         {/* Outlet: Component that contains the actual page content */}

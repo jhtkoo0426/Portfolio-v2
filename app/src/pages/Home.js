@@ -7,7 +7,7 @@ import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import l4s_landing from "../media/l4s_landing.jpg";
 import l4s_demo from "../videos/l4s-demo.mp4";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendarDays, faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelopeOpen, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import "../css/workExperienceWrapper.css";
 import TechStack from '../components/TechStack';
@@ -36,7 +36,7 @@ const Home = () => {
                 </div>
             </Container>
             <Container id={"about-me-intro"}>
-                <h1 className=''>About Me</h1>
+                <h1 className='subtitle'>About Me</h1>
             </Container>
             <Container id={"about-me"}>
                 <div className='abt-me-container'>
@@ -51,7 +51,7 @@ const Home = () => {
                 </div>
             </Container>
             <Container id={"experience-intro"}>
-                <h1 className=''>Work Experience</h1>
+                <h1 className='subtitle'>Work Experience</h1>
             </Container>
             <Container id={"work-experience"}>
                 <ParallaxProvider>
@@ -97,15 +97,14 @@ const Home = () => {
                             tech_stack={["Python", "Django", "Natural Language Processing", "Full-stack development"]}
                         >
                             <p>I was fortunate to participate in the UCL Industry Exchange Network with 2 teammates on a
-                                Natural Language Processing project. We were presented a problem by our client at the
-                                beginning and gradually worked towards a deployable solution. Through gathering requirements,
-                                building prototypes and maintain frequent updates, our client was able to keep track of our
-                                process and made fine changes where appropriate.</p>
+                                Natural Language Processing project. Through gathering requirements, building prototypes 
+                                and maintain frequent updates, our client was able to keep track of our process and made 
+                                fine changes where appropriate.</p>
                             <br></br>
                             <p>The project problem itself was challenging for me. Although NLP was new to me at the time, 
                                 being able to think critically and apply my machine learning knowledge occasionally has 
-                                helped me adapt to the field quickly and contribute to the project, solving 
-                                obstacles along the way.</p>
+                                helped me adapt to the field quickly and contribute to the project, solving obstacles 
+                                along the way.</p>
                             <br></br>
                             <p>In the end, our team successfully delivered our solution on time and we hope that it could 
                                 someday be distributed as within  the NHS frontlines to reduce their workload.</p>
@@ -114,7 +113,7 @@ const Home = () => {
                 </ParallaxProvider>
             </Container>
             <Container id={"works-intro"}>
-                <h1 className=''>Selected Works</h1>
+                <h1 className='subtitle'>Selected Works</h1>
             </Container>
             <Container id={"works"}>
                 <div className='selected-work' id='okane'>
@@ -147,17 +146,23 @@ const Home = () => {
             <Container id={"contacts"}>
                 <div className='contacts-container'>
                     <div className='contacts-title'>
-                        <h1>Interested?</h1>
-                        <h1>Let's get in touch!</h1>
+                        <h1 className='subtitle'>Interested?</h1>
+                        <h1 className='subtitle'>Let's get in touch!</h1>
                     </div>
                     <div className='contacts-text'>
                         <p>I am currently looking for an <span className='span underline'>internship/
                             graduate scheme</span> to gain some more hands-on experience. I'd love learn 
                             about new opportunities in software engineering and data analysis!</p>
-                        <button className='reach-out' onClick={copy_email}>
+                        <button className='reach-out email' onClick={copy_email}>
                             <FontAwesomeIcon icon={faEnvelopeOpen}></FontAwesomeIcon>
-                            <p className='cpy-email'>jhtkbusiness@gmail.com</p>
+                            <p>jhtkbusiness@gmail.com</p>
                         </button>
+                        <p>You can also find me via <span className='span'>phone</span>:</p>
+                        <div className='reach-out'>
+                            <FontAwesomeIcon icon={faPhone}></FontAwesomeIcon>
+                            <p>London: <br></br> (+44) 7427 566966</p>
+                            <p>Hong Kong: <br></br> (+852) 9728 2865</p>
+                        </div>
                     </div>
                 </div>
             </Container>

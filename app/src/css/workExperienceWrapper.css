@@ -20,7 +20,7 @@
 
 .exp-wrapper > .exp-content > h1 {
     font-family: 'NoahBold';
-    font-size: var(--h1-small);
+    font-size: var(--h1-e-small);
     color: var(--white);
 }
 

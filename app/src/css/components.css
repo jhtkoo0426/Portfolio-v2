@@ -1,13 +1,4 @@
 /* CSS File for React.js components */
-/* spans */
-.span {
-    color: var(--pink);
-}
-
-.span.underline {
-    border-bottom: 1px solid var(--pink);
-}
-
 /* Container.js react component */
 .container {
     padding: 0 12.5%;
@@ -21,12 +12,7 @@
 }
 
 /* About me section CSS */
-.container#about-me-intro > h1 {
-    margin-left: 10vw;
-    font-family: 'NoahBold';
-    font-size: var(--h1-mid);
-    color: var(--white);
-}
+.container#about-me-intro > h1 { margin-left: 10vw; }
 
 .container#about-me {
     height: 60vh;
@@ -40,12 +26,7 @@
 
 /* "Work Experience" intro CSS */
 .container#experience-intro { height: 15vh; }
-.container#experience-intro > h1 {
-    margin-left: 30vw;
-    font-family: 'NoahBold';
-    font-size: var(--h1-mid);
-    color: var(--white);
-}
+.container#experience-intro > h1 { margin-left: 30vw; }
 
 /* Work Experience Section - L4S work experience CSS */
 .container#work-experience {
@@ -58,15 +39,7 @@
 }
 
 /* Selected works section CSS */
-.container#works-intro {
-    height: 20vh;
-}
-
-.container#works-intro > h1 {
-    font-family: 'NoahBold';
-    font-size: var(--h1-mid);
-    color: var(--white);
-}
+.container#works-intro { height: 20vh; }
 
 .container#works {
     display: grid;
@@ -74,10 +47,7 @@
     grid-column-gap: 5%;
 }
 
-.selected-work {
-    color: var(--light-purple);
-}
-
+.selected-work { color: var(--light-purple); }
 .selected-work > .project-title {
     font-family: 'InterBold';
     font-size: var(--p-large);
@@ -85,9 +55,7 @@
 }
 
 /* Tech stack component CSS */
-.tech-stack {
-    word-break: break-all;
-}
+.tech-stack { word-break: break-all; }
 
 .tech-stack > span {
     display: inline-block;
@@ -100,20 +68,14 @@
 }
 
 /* Contacts CSS */
-.container#contacts { height: 80vh; display: flex; align-items: center;}
-.container#contacts > .contacts-container {
-    margin-left: 50%;
+.container#contacts {
+    height: 85vh;
+    display: flex;
+    align-items: center;
 }
 
-.container#contacts > .contacts-container > .contacts-title {
-    margin-bottom: 5vh;
-}
-
-.container#contacts > .contacts-container > .contacts-title > h1 {
-    font-family: 'NoahBold';
-    font-size: var(--h1-small);
-    color: var(--white);
-} 
+.container#contacts > .contacts-container { margin-left: 45%; }
+.container#contacts > .contacts-container > .contacts-title { margin-bottom: 3%; }
 
 .container#contacts > .contacts-container > .contacts-text {
     line-height: 200%;
@@ -123,24 +85,18 @@
 .container#contacts > .contacts-container > .contacts-text > .reach-out {
     width: 70%;
     margin: 3vh 0;
-    padding: 3% 6%;
     display: flex;
     align-items: center;
     transition: all .25s ease-in-out;
-    cursor: pointer;
-    border: 1px solid var(--pink);
+    border: none;
     font-family: 'SSProReg';
     background-color: transparent;
     color: var(--white);
 }
 
-.container#contacts > .contacts-container > .contacts-text > .reach-out:hover {
-    background-color: var(--pink);
-}
+.container#contacts > .contacts-container > .contacts-text > .reach-out.email { cursor: pointer;}
 
-.container#contacts > .contacts-container > .contacts-text > .reach-out > .cpy-email {
-    margin-left: 5%;
-}
+.container#contacts > .contacts-container > .contacts-text > .reach-out > p { margin-left: 5%; }
 
 
 /* Anchor CSS */

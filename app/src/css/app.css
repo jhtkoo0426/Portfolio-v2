@@ -11,7 +11,7 @@
     --black: #000;
     --white: #fff;
     --dark-grey: #0b131d;
-    --pink: #bdf523;
+    --yg: #faa2d5;
     --purple: #420FE7;
     --light-purple: #bdbef7;
     --pale-purple: #bdbef781;
@@ -59,6 +59,21 @@ p {
     -moz-osx-font-smoothing: grayscale;
 }
 
+/* Styling for spans (text highlighting & underlining) */
+.span { color: var(--yg); }
+.span.underline { border-bottom: 1px solid var(--yg); }
+
+/* Styling for headers */
+.title {
+    
+}
+
+.subtitle {
+    font-family: 'NoahBold';
+    font-size: var(--h1-mid);
+    color: var(--white);
+}
+
 /* CSS for app container layout */
 .app {
     width: 100%;
@@ -71,7 +86,7 @@ p {
     position: fixed;
     top: 0;
     width: 100%;
-    height: 200px;
+    height: 15vh;
     padding: 0 5%;
     display: flex;
     align-items: center;
@@ -88,27 +103,14 @@ p {
 
 .topnav-menu > a {
     position: relative;
-    margin: 0 10px;
+    margin: 0 20px;
+    transition: all .25s ease-in-out;
+    font-size: var(--p-large);
+    color: var(--white);
 }
 
-.topnav-menu > a::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 1px;
-    border-radius: 4px;
-    background-color: #18272F;
-    bottom: 0;
-    left: 0;
-    top: 25px;
-    transform-origin: right;
-    transform: scaleX(0);
-    transition: transform .3s ease-in-out;
-}
-
-.topnav-menu > a:hover::before {
-    transform-origin: left;
-    transform: scaleX(1);
+.topnav-menu > a:hover {
+    color: var(--yg);
 }
 
 /* Botnav CSS */
@@ -130,7 +132,7 @@ p {
 }
 
 .botnav > .anchor:hover {
-    color: var(--pink);
+    color: var(--yg);
 }
 
 /* Homepage CSS */
@@ -139,9 +141,9 @@ p {
 }
 
 .landing-grid > div > .intro {
-    font-family: 'SSProReg';
-    font-size: var(--p-large);
-    color: var(--pink);
+    font-family: 'InterReg';
+    font-size: var(--p-mid);
+    color: var(--yg);
 }
 
 .landing-grid > div > .intro-title {
