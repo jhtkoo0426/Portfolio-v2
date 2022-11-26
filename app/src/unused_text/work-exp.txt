@@ -1,0 +1,30 @@
+I really enjoyed the process of building the prototype webapp for the company. Although 
+I had little web development experience back then, I was able to adapt quickly with
+the extensive Django tutorials and documentation.
+
+I was able to visualise the data I had collected from previous tasks and generate interactive
+graphs with Chart.js.
+
+I was fortunate to participate in the UCL Industry Exchange Network with 2 teammates on a
+Natural Language Processing project. Through gathering requirements, building prototypes 
+and maintain frequent updates, our client was able to keep track of our process and made 
+fine changes where appropriate.
+
+The project problem itself was challenging for me. Although NLP was new to me at the time, 
+being able to think critically and apply my machine learning knowledge occasionally has 
+helped me adapt to the field quickly and contribute to the project, solving obstacles 
+along the way.
+
+In the end, our team successfully delivered our solution on time and we hope that it could 
+someday be distributed as within the NHS frontlines to reduce their workload.
+                
+
+Okane queries financial data from finnhub.io to determine the market's attitude  towards 
+a specific stock (overvalued or undervalued). I used sentiment analysis to process news
+summaries of companies and time series forecasting to predict the future overall price 
+trend of a stock.
+
+Although naive, Okane can provide me with technical insight into the potential of
+a stock using data analysis very quickly. This simple automation could be further developed
+into a recommendation system that may make better decisions on trading strategies than 
+myself :).

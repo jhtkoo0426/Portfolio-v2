@@ -66,13 +66,7 @@ const Layout = () => {
           <Outlet/>
         </div>
         <nav className="botnav">
-          <p>Created by Justin Koo</p>
-          <Anchor href={"https://github.com/jhtkoo0426"}>
-            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-          </Anchor>
-          <Anchor href={"https://www.linkedin.com/in/justin-koo-29bb831b2/"}>
-            <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
-          </Anchor>
+          <p>Created by myself (of course 😀)</p>
         </nav>
       </div>
     );
