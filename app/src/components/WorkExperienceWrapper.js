@@ -1,3 +1,5 @@
+import TechStack from './TechStack';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays } from '@fortawesome/free-solid-svg-icons';
 
@@ -18,11 +20,7 @@ const WorkExperienceWrapper = ({ image, vid, company_name, duration, role, child
                 <p className='exp-role'>{role}</p>
                 <br></br>
                 {children}
-                <div className='tech-stack'>
-                    {tech_stack.map(function(object, key) {
-                        return <span className="sw-tool">{object}</span>
-                    })}
-                </div>
+                <TechStack tags={tech_stack}></TechStack>
             </div>
             {
                 vid != null &&

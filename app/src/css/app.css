@@ -11,9 +11,10 @@
     --black: #000;
     --white: #fff;
     --dark-grey: #0b131d;
-    --pink: #f5a7cb;
+    --pink: #bdf523;
     --purple: #420FE7;
     --light-purple: #bdbef7;
+    --pale-purple: #bdbef781;
 
     --p-large: calc(10px + 0.85vw);
     --p-mid: calc(10px + 0.55vw);

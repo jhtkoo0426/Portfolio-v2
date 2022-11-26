@@ -10,6 +10,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCalendarDays, faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
 
 import "../css/workExperienceWrapper.css";
+import TechStack from '../components/TechStack';
 
 
 const Home = () => {
@@ -129,12 +130,18 @@ const Home = () => {
                     <p>Although naive, Okane can provide me with technical insight into the potential of
                         a stock using data analysis very quickly. This simple automation could be further developed
                         into a recommendation system that may make better decisions on trading strategies than myself :).</p>
+                    <TechStack
+                        tags={["Python", "Finnhub.io API", "keras"]}>
+                    </TechStack>
                 </div>
                 <div className='selected-work' id='okane'>
                     <p className='project-title'>02 - Pathfinder</p>
                     <p>An interactive web application that visualises the route-finding process between 2 London 
                         Underground stations. The project is based off one of my university couresworks on data
                         structures and algorithms.</p>
+                    <TechStack
+                        tags={["Python", "Path-finding algorithms", "Data structures"]}
+                    ></TechStack>
                 </div>
             </Container>
             <Container id={"contacts"}>
