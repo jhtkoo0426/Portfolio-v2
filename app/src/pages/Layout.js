@@ -60,32 +60,13 @@ const Layout = () => {
           <Outlet/>
         </div>
         <nav className="botnav">
-          <div className="contact-text">
-            <h1>Let's get in touch</h1>
-            <p>jhtkbusiness@gmail.com</p>
-            <div className="phone-grid">
-              <div>
-                <p>London</p>
-                <p>+44 7427 566966</p>
-              </div>
-              <div>
-                <p>Hong Kong</p>
-                <p>+852 97282865</p>
-              </div>
-            </div>
-          </div>
-          <div className="contact-links">
-            <div className="socials">
-              <Anchor href={"https://www.linkedin.com/in/justin-koo-29bb831b2/"}>
-                <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
-              </Anchor>
-            </div>
-            <div className="socials">
-              <Anchor href={"https://github.com/jhtkoo0426"}>
-                <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-              </Anchor>
-            </div>
-          </div>
+          <p>Created by Justin Koo</p>
+          <Anchor href={"https://github.com/jhtkoo0426"}>
+            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+          </Anchor>
+          <Anchor href={"https://www.linkedin.com/in/justin-koo-29bb831b2/"}>
+            <FontAwesomeIcon icon={faLinkedinIn}></FontAwesomeIcon>
+          </Anchor>
         </nav>
       </div>
     );

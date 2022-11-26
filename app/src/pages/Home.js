@@ -6,10 +6,16 @@ import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 import l4s_landing from "../media/l4s_landing.jpg";
 import l4s_demo from "../videos/l4s-demo.mp4";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCalendar, faCalendarAlt, faCalendarDay, faCalendarDays } from '@fortawesome/free-solid-svg-icons';
+import { faCalendarDays, faEnvelopeOpen } from '@fortawesome/free-solid-svg-icons';
 
 
 const Home = () => {
+    function copy_email() {
+        navigator.clipboard.writeText("jhtkbusiness@gmail.com");
+
+        
+    }
+
     return (
         <div className='homepage'>
             <Container id={"landing"}>
@@ -95,8 +101,8 @@ const Home = () => {
                                     Natural Language Processing team project with the NHS. Although not being well-versed in 
                                     NLP, being able to think critically and learn quickly has helped me swiftly adapt to the 
                                     environment, and contribute to the project, as well as solving obstacles along the way. 
-                                    Our solution is currently under evaluation and is a potential candidate to be distributed 
-                                    as software within the NHS frontlines in the future.</p>
+                                    Our team delivered our solution and hopes that it could someday be distributed as within 
+                                    the NHS frontlines to reduce their workload.</p>
                                 <div className='tech-stack'>
                                     <span>Python</span>
                                     <span>Django</span>
@@ -112,7 +118,26 @@ const Home = () => {
                 <h1 className=''>Selected Works</h1>
             </Container>
             <Container id={"works"}>
-                
+                <div className='selected-work' id='okane'>
+                    
+                </div>
+            </Container>
+            <Container id={"contacts"}>
+                <div className='contacts-container'>
+                    <div className='contacts-title'>
+                        <h1>Interested?</h1>
+                        <h1>Let's get in touch!</h1>
+                    </div>
+                    <div className='contacts-text'>
+                        <p>I am currently looking for an <span className='span underline'>internship/
+                            graduate scheme</span> to gain some more hands-on experience. I'd love learn 
+                            about new opportunities in software engineering and data analysis!</p>
+                        <button className='reach-out' onClick={copy_email}>
+                            <FontAwesomeIcon icon={faEnvelopeOpen}></FontAwesomeIcon>
+                            <p className='cpy-email'>jhtkbusiness@gmail.com</p>
+                        </button>
+                    </div>
+                </div>
             </Container>
         </div>
     );

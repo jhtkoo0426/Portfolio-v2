@@ -136,7 +136,48 @@
     color: var(--purple);
 }
 
+/* Contacts CSS */
+.container#contacts { height: 80vh; display: flex; align-items: center;}
+.container#contacts > .contacts-container {
+    margin-left: 50%;
+}
 
+.container#contacts > .contacts-container > .contacts-title {
+    margin-bottom: 5vh;
+}
+
+.container#contacts > .contacts-container > .contacts-title > h1 {
+    font-family: 'NoahBold';
+    font-size: var(--h1-small);
+    color: var(--white);
+} 
+
+.container#contacts > .contacts-container > .contacts-text {
+    line-height: 200%;
+    color: var(--light-purple);
+}
+
+.container#contacts > .contacts-container > .contacts-text > .reach-out {
+    width: 70%;
+    margin: 3vh 0;
+    padding: 3% 6%;
+    display: flex;
+    align-items: center;
+    transition: all .25s ease-in-out;
+    cursor: pointer;
+    border: 1px solid var(--pink);
+    font-family: 'SSProReg';
+    background-color: transparent;
+    color: var(--white);
+}
+
+.container#contacts > .contacts-container > .contacts-text > .reach-out:hover {
+    background-color: #f5a7cb;
+}
+
+.container#contacts > .contacts-container > .contacts-text > .reach-out > .cpy-email {
+    margin-left: 5%;
+}
 /* Anchor CSS */
 .anchor {
     text-decoration: none;
