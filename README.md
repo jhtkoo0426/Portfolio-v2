@@ -47,7 +47,7 @@
 - [x] Improve CSS code quality (potentially with SASS)
 
 
-### Disclaimer/Copyright
+## Disclaimer/Copyright
 Design insiprations from these amazing web portfolios:
 - [https://www.adriengervaix.com](https://www.adriengervaix.com)
 - [https://qaisar.design](https://qaisar.design)

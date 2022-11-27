@@ -156,6 +156,14 @@
 // Medium Devices, Desktops
 @media only screen and (max-width: 992px) {
     .container {
+        &#landing {
+            div {
+                .about {
+                    margin-top: 10%;
+                }
+            }
+        }
+        
         &#experience-intro {
             h1 { margin-left: 0; }
         }
@@ -175,6 +183,10 @@
             margin-top: 15%;
             margin-left: 0;
         }
+
+        &#works {
+            margin-top: 5%;
+        }
     }
 }
 
@@ -188,6 +200,7 @@
                 .about {
                     width: 80%;
                     margin-left: 10%;
+                    margin-top: 15%;
                 }
             }
         }
@@ -199,7 +212,7 @@
             grid-gap: 0;
         }
 
-        &#works {
+        &works {
             height: 100vh;
             grid-template-columns: 100%;
         }

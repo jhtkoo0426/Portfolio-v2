@@ -27,7 +27,7 @@ export default function App() {
     // Loading time transition into app page
     setTimeout(() => {
       setIsLoading(false);
-    }, 0);
+    }, 3000);
   }, []);  
 
   return isLoading ? 
