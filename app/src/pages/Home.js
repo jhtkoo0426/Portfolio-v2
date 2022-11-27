@@ -10,7 +10,7 @@ import l4s_demo from "../videos/l4s-landing-demo.mp4";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen, faPhone } from '@fortawesome/free-solid-svg-icons';
 
-import "../css/workExperienceWrapper.css";
+import "../css/workExperienceWrapper.scss";
 import { useRef } from 'react';
 
 

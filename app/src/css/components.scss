@@ -1,0 +1,213 @@
+// CSS File for React.js components
+// Container.js react component
+.container {
+    padding: 0 10%;
+
+    // Landing section CSS
+    &#landing {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    
+        div {
+            .intro {
+                font-family: 'InterReg';
+                font-size: var(--p-large);
+                color: var(--dark-grey);
+            }
+    
+            .intro-title {
+                width: 80%;
+                font-family: 'NoahBold';
+                font-size: var(--h1-large);
+                color: var(--dark-grey);
+            }
+            
+            .about {
+                width: 40%;
+                float: right;
+                line-height: 180%;
+                font-family: 'InterReg';
+                font-size: var(--p-mid);
+                color: var(--light-purple);
+
+                .email-cpy {
+                    padding: 20px 40px;
+                    outline: 1px solid var(--grey);
+                }
+            }
+        }
+    }
+
+    // About me section CSS
+    &#about-me {
+        width: 80%;
+        height: 80vh;
+        margin: 0 10%;
+        line-height: 160%;
+        font-family: 'InterReg';
+        font-size: var(--p-mid);
+        color: var(--light-purple);
+    }
+
+    // Work experience title CSS
+    &#experience-intro {
+        height: 15vh;
+
+        h1 { margin-left: 30vw; }
+    }
+
+    // Work experience section CSS
+    &#work-experience {
+        width: 100%;
+        height: 90vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 10%;
+    }
+
+    // Selected works section CSS
+    &#works-intro {
+        height: 15vh;
+        margin-left: 10%;
+    }
+
+    &#works {
+        height: 50vh;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 5%;
+    }
+
+    // Contacts CSS
+    &#contacts {
+        height: 85vh;
+        display: flex;
+        align-items: center;
+
+        .contacts-container {
+            margin-left: 45%;
+        
+            .contacts-title { margin-bottom: 3%; }
+            
+            .contacts-text {
+                line-height: 200%;
+                font-size: var(--p-mid);
+
+                .reach-out {
+                    width: 70%;
+                    margin: 3vh 0;
+                    padding: 2vh 2vw;
+                    display: flex;
+                    align-items: center;
+                    transition: all .25s ease-in-out;
+                    border: 1px solid var(--dark-grey);
+                    font-family: 'SSProReg';
+                    font-size: var(--p-mid);
+                    background-color: transparent;
+                    color: var(--dark-grey);
+
+                    &:hover {
+                        border: 1px solid var(--purple);
+                        background-color: var(--purple);
+                        color: var(--white);
+                    }
+
+                    p { margin-left: 5%; }
+
+                    &.email { cursor: pointer;}
+                }
+            }
+        }
+    }
+}
+
+
+// Tech stack component CSS
+.tech-stack {
+    word-break: break-all;
+
+    span {
+        display: inline-block;
+        margin: 5px 5px 5px 0;
+        white-space: nowrap;
+        border-radius: 6px;
+        padding: 3px 10px;
+        font-family: 'Inter';
+        background-color: var(--purple);
+        color: var(--white);
+    }    
+}
+
+
+// Anchor CSS
+.anchor {
+    text-decoration: none;
+    transition: color 0.2s ease;
+    color: var(--dark-grey);
+}
+
+
+// Handling mobile responsiveness
+// Large Devices, Wide Screens
+@media only screen and (max-width: 1200px) { }
+
+// Medium Devices, Desktops
+@media only screen and (max-width: 992px) {
+    .container {
+        &#experience-intro {
+            h1 { margin-left: 0; }
+        }
+
+        &#work-experience {
+            grid-template-columns: 100%;
+            grid-gap: 0;
+        }
+
+        &#contacts > .contacts-container {
+            width: 80%;
+            margin-left: 10%;
+        }
+
+        &#works-intro {
+            height: 5vh;
+            margin-top: 15%;
+            margin-left: 0;
+        }
+    }
+}
+
+// Small Devices, Tablets
+@media only screen and (max-width: 768px) {
+    .container {
+        &#landing {
+            div {
+                .intro-title { font-size: var(--h1-mid); }
+
+                .about {
+                    width: 80%;
+                    margin-left: 10%;
+                }
+            }
+        }
+
+        &#experience-intro { height: 5vh; }
+
+        &#work-experience {
+            grid-template-columns: 100%;
+            grid-gap: 0;
+        }
+
+        &#works {
+            height: 100vh;
+            grid-template-columns: 100%;
+        }
+    }
+}
+
+// Extra Small Devices, Phones 
+@media only screen and (max-width: 480px) { }
+
+// Custom, iPhone Retina
+@media only screen and (max-width : 320px) { }

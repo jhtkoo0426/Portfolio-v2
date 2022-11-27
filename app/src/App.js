@@ -3,8 +3,8 @@ import Layout from "./pages/Layout";
 import Home from "./pages/Home";
 import React, { useState, useEffect } from "react";
 
-import "../src/css/app.css";
-import "../src/css/components.css";
+import "../src/css/app.scss";
+import "../src/css/components.scss";
 
 
 const AppRoute = () => {

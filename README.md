@@ -44,7 +44,7 @@
 - [ ] Add splash screen animation
 - [x] Mobile responsiveness
 - [x] Refactor code into React.js components, especially containers
-- [ ] Improve CSS code quality (potentially with SASS)
+- [x] Improve CSS code quality (potentially with SASS)
 
 
 ### Disclaimer/Copyright

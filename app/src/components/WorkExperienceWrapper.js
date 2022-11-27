@@ -23,7 +23,7 @@ const WorkExperienceWrapper = ({ image, vid, title, role, allow_explore, explore
                 }
                 {
                     allow_explore == true &&
-                    <span>
+                    <span className='exp-link-guide'>
                         <Link className='exp-link' to={explore_link}>EXPLORE</Link>
                         <svg className='arrow' width="45" height="11" viewBox="0 0 45 11" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M39.6364 9.98889L44 5.98889M44 5.98889L39.6364 1.98889M44 5.98889H1" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
