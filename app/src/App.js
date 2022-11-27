@@ -34,9 +34,14 @@ export default function App() {
     // Page is still loading -> Display the splash screen
     // TODO: Improve the splash screen animation
     <div className="splash-screen">
-      <h1 className="splash-screen-title">
-        The splashscreen
-      </h1>
+        <div className="splash-screen">
+            {/* https://codepen.io/aaroniker/pen/omvYNZ */}
+            <div class="loader circle">
+                <svg viewBox="0 0 80 80">
+                    <circle id="test" cx="40" cy="40" r="32"></circle>
+                </svg>
+            </div>
+        </div>
     </div>:
     // Page finished loading -> Load portfolio
     <BrowserRouter>

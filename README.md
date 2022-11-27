@@ -41,7 +41,7 @@
 - [x] Add more design variety to work showcases
 - [x] Add scrolling effects
 - [ ] CSS webkit
-- [ ] Add splash screen animation
+- [x] Add splash screen animation
 - [x] Mobile responsiveness
 - [x] Refactor code into React.js components, especially containers
 - [x] Improve CSS code quality (potentially with SASS)
