@@ -11,6 +11,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import "../css/workExperienceWrapper.css";
+import { useRef } from 'react';
 
 
 const Home = () => {

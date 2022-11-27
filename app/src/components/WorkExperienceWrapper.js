@@ -21,7 +21,6 @@ const WorkExperienceWrapper = ({ image, vid, title, role, allow_explore, explore
                     tech_stack != null &&
                     <TechStack tags={tech_stack}></TechStack>
                 }
-                <br></br><br></br>
                 {
                     allow_explore == true &&
                     <span>

@@ -42,7 +42,7 @@
 - [x] Add scrolling effects
 - [ ] CSS webkit
 - [ ] Add splash screen animation
-- [ ] Mobile responsiveness
+- [x] Mobile responsiveness
 - [x] Refactor code into React.js components, especially containers
 - [ ] Improve CSS code quality (potentially with SASS)
 
