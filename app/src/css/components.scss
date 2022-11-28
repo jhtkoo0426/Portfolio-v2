@@ -74,7 +74,7 @@
     }
 
     &#works {
-        height: 50vh;
+        height: 100vh;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 5%;
@@ -186,6 +186,7 @@
 
         &#works {
             margin-top: 5%;
+            grid-template-columns: 100%;
         }
     }
 }

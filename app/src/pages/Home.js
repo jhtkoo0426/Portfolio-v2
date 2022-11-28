@@ -5,8 +5,8 @@ import TechStack from '../components/TechStack';
 
 import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
-import l4s_landing from "../media/l4s_landing.jpg";
 import l4s_demo from "../videos/l4s-landing-demo.mp4";
+import guiana_demo from "../videos/guiana-aapl.mp4";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen, faPhone } from '@fortawesome/free-solid-svg-icons';
 
@@ -86,16 +86,20 @@ const Home = () => {
                 <ParallaxProvider>
                     <Parallax speed={15}>
                         <WorkExperienceWrapper
-                            title={"Okane"}
+                            title={"Guiana Chestnut"}
                             role={"Featured project"}
                             allow_explore={true}
                             explore_link={null}
-                            tech_stack={["Python", "Finnhub.io API", "keras"]}
+                            tech_stack={["Python", "Django", "Finnhub.io API", "Sentiment Analysis"]}
+                            vid={guiana_demo}
                         >
-                            <p>A naive <span className='purple'>trading algorithm</span> that I am building which embeds 
-                                machine learning technqiues I've acquired, into fundamental and technical analysis of 
-                                stock symbols. The project was inspired by the 6th Hexcambridge Hackathon that I 
-                                participated with my friends where we attempted to develop an arbitrage algorithm.</p>
+                            <p>Guiana Chestnut (Money Tree) is my most ambitious project so far that combines multiple 
+                                technologies that I have acquired so far, from full-stack web development to stock 
+                                analysis.</p>
+                            <br></br>
+                            <p>Why re-invent the wheel when so many screening services are available? The main is I 
+                                hope that this project can demonstrate my skillset through developing an end-to-end 
+                                system, built using highly-transferrable skills.</p>
                         </WorkExperienceWrapper>
                     </Parallax>
                     <Parallax speed={25}>

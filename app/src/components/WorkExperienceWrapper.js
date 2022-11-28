@@ -8,6 +8,13 @@ const WorkExperienceWrapper = ({ image, vid, title, role, allow_explore, explore
     return (
         <div className="exp-wrapper">
             {
+                vid != null &&
+                <video className='exp-video' autoPlay loop muted controls>
+                    <source src={vid} type="video/mp4"></source>
+                    Your browser does not support the video tag.
+                </video>
+            }
+            {
                 image != null &&
                 <img className='exp-image' src={image} alt=""></img>
             }
@@ -21,6 +28,7 @@ const WorkExperienceWrapper = ({ image, vid, title, role, allow_explore, explore
                     tech_stack != null &&
                     <TechStack tags={tech_stack}></TechStack>
                 }
+                <br></br>
                 {
                     allow_explore == true &&
                     <span className='exp-link-guide'>
@@ -31,12 +39,6 @@ const WorkExperienceWrapper = ({ image, vid, title, role, allow_explore, explore
                     </span>
                 }
             </div>
-            {
-                vid != null &&
-                <video className='exp-video' autoPlay loop muted>
-                    <source src={vid} type="video/mp4"></source>
-                </video>
-            }
         </div>
     )
 }
