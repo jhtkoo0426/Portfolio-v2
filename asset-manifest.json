@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.c5884843.css",
-    "main.js": "/static/js/main.d4b141cf.js",
+    "main.css": "/static/css/main.7d32a861.css",
+    "main.js": "/static/js/main.0bab9f16.js",
     "static/js/787.c1112931.chunk.js": "/static/js/787.c1112931.chunk.js",
     "static/media/l4s-landing-demo.mp4": "/static/media/l4s-landing-demo.bd5a0468ef8842321964.mp4",
+    "static/media/guiana-aapl.mp4": "/static/media/guiana-aapl.cdbfb8b8cc71a8004f56.mp4",
     "static/media/Inter-Bold.ttf": "/static/media/Inter-Bold.a73db89c43e44ca8f5e0.ttf",
     "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.2391725004ae05a27e8e.ttf",
     "static/media/SourceSansPro-Regular.ttf": "/static/media/SourceSansPro-Regular.df87f53caf449a3b7572.ttf",
     "static/media/SourceSansPro-Bold.ttf": "/static/media/SourceSansPro-Bold.2dec2f24e3bdf2c6862e.ttf",
     "static/media/Noah Head Bold.otf": "/static/media/Noah Head Bold.477cf1a6b8b8242b0803.otf",
-    "static/media/l4s_landing.jpg": "/static/media/l4s_landing.9c00b2c1e031c8ad1e41.jpg",
     "static/media/Noah Head Regular.otf": "/static/media/Noah Head Regular.d40ef2cfdefaeab4d60d.otf",
     "index.html": "/index.html",
-    "main.c5884843.css.map": "/static/css/main.c5884843.css.map",
-    "main.d4b141cf.js.map": "/static/js/main.d4b141cf.js.map",
+    "main.7d32a861.css.map": "/static/css/main.7d32a861.css.map",
+    "main.0bab9f16.js.map": "/static/js/main.0bab9f16.js.map",
     "787.c1112931.chunk.js.map": "/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c5884843.css",
-    "static/js/main.d4b141cf.js"
+    "static/css/main.7d32a861.css",
+    "static/js/main.0bab9f16.js"
   ]
 }
