@@ -1,10 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.7d32a861.css",
-    "main.js": "/static/js/main.6349f05c.js",
+    "main.css": "/static/css/main.02e38955.css",
+    "main.js": "/static/js/main.fb0b6ca8.js",
     "static/js/787.c1112931.chunk.js": "/static/js/787.c1112931.chunk.js",
     "static/media/l4s-landing-demo.mp4": "/static/media/l4s-landing-demo.bd5a0468ef8842321964.mp4",
     "static/media/guiana-aapl.mp4": "/static/media/guiana-aapl.cdbfb8b8cc71a8004f56.mp4",
+    "static/media/pathfinder-screenshot.png": "/static/media/pathfinder-screenshot.bb2b3c2446bf2338045e.png",
     "static/media/Inter-Bold.ttf": "/static/media/Inter-Bold.a73db89c43e44ca8f5e0.ttf",
     "static/media/Inter-Regular.ttf": "/static/media/Inter-Regular.2391725004ae05a27e8e.ttf",
     "static/media/SourceSansPro-Regular.ttf": "/static/media/SourceSansPro-Regular.df87f53caf449a3b7572.ttf",
@@ -12,12 +13,12 @@
     "static/media/Noah Head Bold.otf": "/static/media/Noah Head Bold.477cf1a6b8b8242b0803.otf",
     "static/media/Noah Head Regular.otf": "/static/media/Noah Head Regular.d40ef2cfdefaeab4d60d.otf",
     "index.html": "/index.html",
-    "main.7d32a861.css.map": "/static/css/main.7d32a861.css.map",
-    "main.6349f05c.js.map": "/static/js/main.6349f05c.js.map",
+    "main.02e38955.css.map": "/static/css/main.02e38955.css.map",
+    "main.fb0b6ca8.js.map": "/static/js/main.fb0b6ca8.js.map",
     "787.c1112931.chunk.js.map": "/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.7d32a861.css",
-    "static/js/main.6349f05c.js"
+    "static/css/main.02e38955.css",
+    "static/js/main.fb0b6ca8.js"
   ]
 }
