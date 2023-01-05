@@ -104,7 +104,7 @@ const Home = () => {
                                 system, built using highly-transferrable skills.</p>
                         </WorkExperienceWrapper>
                     </Parallax>
-                    <Parallax speed={25}>
+                    <Parallax speed={35}>
                         <WorkExperienceWrapper
                             title={"Pathfinder"}
                             allow_explore={false}
