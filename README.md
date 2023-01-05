@@ -48,6 +48,6 @@
 
 
 ## Disclaimer/Copyright
-Design insiprations from these amazing web portfolios:
+The design of jhtkoo0426.github.io was inspired by these amazing web portfolios:
 - [https://www.adriengervaix.com](https://www.adriengervaix.com)
 - [https://qaisar.design](https://qaisar.design)
