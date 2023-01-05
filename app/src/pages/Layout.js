@@ -25,7 +25,8 @@ const Layout = () => {
           <Outlet/>
         </div>
         <nav className="botnav">
-          <p>Created by myself (of course 😀)</p>
+          <p>Made from scratch by myself with React.js</p>
+          <p>Design inspiration taken from <a href="https://www.adriengervaix.com">Adrien Gervalx</a> and <a href="https://qaisar.design">Qaisar Ahmad</a></p>
         </nav>
       </div>
     );

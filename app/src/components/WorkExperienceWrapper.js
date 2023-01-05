@@ -1,10 +1,12 @@
 import Anchor from './Anchor';
 import { Link } from 'react-router-dom';
 import TechStack from './TechStack';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 
 // React.js component for work experience descriptions.
-const WorkExperienceWrapper = ({ image, vid, title, role, allow_explore, explore_link, tech_stack, children }) => {
+const WorkExperienceWrapper = ({ image, vid, title, role, allow_explore, explore_link, github_link, tech_stack, children }) => {
     return (
         <div className="exp-wrapper">
             {
@@ -19,7 +21,15 @@ const WorkExperienceWrapper = ({ image, vid, title, role, allow_explore, explore
                 <img className='exp-image' src={image} alt=""></img>
             }
             <div className="exp-content">
-                <h1 className="exp-content-title">{title}</h1>
+                <div className='exp-content-title-wrapper'>
+                    <h1 className="exp-content-title">{title}</h1>
+                    {   
+                        github_link != null &&
+                        <a href={github_link} target={"_blank"}>
+                            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                        </a>
+                    }
+                </div>
                 <p className='exp-role'>{role}</p>
                 <br></br>
                 {children}

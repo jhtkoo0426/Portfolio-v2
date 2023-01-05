@@ -36,10 +36,21 @@
 
         p { font-size: var(--p-mid); }
 
-        .exp-content-title {
-            font-family: 'InterBold';
-            font-size: var(--h1-small);
-            color: var(--dark-grey);
+        .exp-content-title-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .exp-content-title {
+                font-family: 'InterBold';
+                font-size: var(--h1-small);
+                color: var(--dark-grey);
+            }
+
+            a {
+                font-size: var(--p-large);
+                color: var(--dark-grey);
+            }
         }
 
         .exp-link-guide {

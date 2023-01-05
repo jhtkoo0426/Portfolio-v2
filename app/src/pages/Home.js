@@ -7,6 +7,7 @@ import { Parallax, ParallaxProvider } from "react-scroll-parallax";
 
 import l4s_demo from "../videos/l4s-landing-demo.mp4";
 import guiana_demo from "../videos/guiana-aapl.mp4";
+import pathfinder_demo from "../media/pathfinder-screenshot.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen, faPhone } from '@fortawesome/free-solid-svg-icons';
 
@@ -92,6 +93,7 @@ const Home = () => {
                             explore_link={null}
                             tech_stack={["Python", "Django", "Finnhub.io API", "Sentiment Analysis"]}
                             vid={guiana_demo}
+                            github_link={"https://github.com/jhtkoo0426/Guiana-Chestnut"}
                         >
                             <p>Guiana Chestnut (Money Tree) is my most ambitious project so far that combines multiple 
                                 technologies that I have acquired so far, from full-stack web development to stock 
@@ -108,6 +110,8 @@ const Home = () => {
                             allow_explore={false}
                             explore_link={null}
                             tech_stack={["Python", "Path-finding algorithms", "Data structures"]}
+                            image={pathfinder_demo}
+                            github_link={"https://github.com/jhtkoo0426/Pathfinder"}
                         >
                             <p>An interactive web application that visualises the route-finding process between 2 London 
                                 Underground stations. The project is based off one of my university couresworks on data
