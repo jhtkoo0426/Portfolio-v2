@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.6ba51085.css",
-    "main.js": "/static/js/main.b26c54db.js",
+    "main.css": "/static/css/main.b2e2949e.css",
+    "main.js": "/static/js/main.d379aa0d.js",
     "static/js/787.c1112931.chunk.js": "/static/js/787.c1112931.chunk.js",
     "static/media/l4s-landing-demo.mp4": "/static/media/l4s-landing-demo.bd5a0468ef8842321964.mp4",
     "static/media/guiana-aapl.mp4": "/static/media/guiana-aapl.cdbfb8b8cc71a8004f56.mp4",
@@ -13,12 +13,12 @@
     "static/media/Noah Head Bold.otf": "/static/media/Noah Head Bold.477cf1a6b8b8242b0803.otf",
     "static/media/Noah Head Regular.otf": "/static/media/Noah Head Regular.d40ef2cfdefaeab4d60d.otf",
     "index.html": "/index.html",
-    "main.6ba51085.css.map": "/static/css/main.6ba51085.css.map",
-    "main.b26c54db.js.map": "/static/js/main.b26c54db.js.map",
+    "main.b2e2949e.css.map": "/static/css/main.b2e2949e.css.map",
+    "main.d379aa0d.js.map": "/static/js/main.d379aa0d.js.map",
     "787.c1112931.chunk.js.map": "/static/js/787.c1112931.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6ba51085.css",
-    "static/js/main.b26c54db.js"
+    "static/css/main.b2e2949e.css",
+    "static/js/main.d379aa0d.js"
   ]
 }
