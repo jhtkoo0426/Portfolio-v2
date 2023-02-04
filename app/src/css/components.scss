@@ -43,7 +43,7 @@
     // About me section CSS
     &#about-me {
         width: 80%;
-        height: 80vh;
+        height: 100vh;
         margin: 0 10%;
         line-height: 160%;
         font-family: 'InterReg';
@@ -143,9 +143,8 @@
 
 // Anchor CSS
 .anchor {
-    text-decoration: none;
     transition: color 0.2s ease;
-    color: var(--dark-grey);
+    color: var(--purple);
 }
 
 

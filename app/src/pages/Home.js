@@ -32,16 +32,18 @@ const Home = () => {
                     </Parallax>
                     <Parallax speed={20}>
                         <p className='about'>I am currently pursuing a <span className='purple'>Computer Science</span> degree
-                            at University College London, with a special focus on data analysis and financial markets.</p>
+                            at University College London, with a special focus applications of machine learning in finance.</p>
                     </Parallax>
                 </ParallaxProvider>
             </Container>
             <Container id={"about-me"}>
-                <p className='large-text'>Outside of university, I enjoy learning new things. At the moment, I'm deep-diving 
-                    into machine learning and working on a side project related to <span className='purple'>algorithmic 
-                    trading</span>. In the future, I want to pursue a career in the financial market as a 
-                    <span className='purple'> quantitative analyst</span>, and apply the knowledge and mindset I 
-                    acquired along my SWE jounrey so far.</p>
+                <p className='large-text'>My journey into the world of machine learning started with my fascination towards the
+                    incredible achievements of AlphaGo, which made history in 2016 for becoming the first AI program to defeat a
+                    human world champion in Go. As a regular Go player who has always been interested in technology and 
+                    game-playing, I was thoroughly impressed by AlphaGo's mastery of such a complex and strategic game like Go. 
+                    This not only sparked my interest in the field of ML but also showed me the limitless potential of AI to solve 
+                    real-world problems. I was inspired to learn more and become part of this exciting field, constantly pushing
+                    the boundaries of what is possible through continuous learning and innovation.</p>
             </Container>
             <Container id={"experience-intro"}>
                 <h1 className='subtitle'>Work Experience</h1>
@@ -76,6 +78,16 @@ const Home = () => {
                                 Processing project. We were able to apply our knowledge in <span className='purple'>
                                 software development cycles</span> (gathering requirements, prototyping, testing, etc.) to 
                                 develop an <span className='purple'>end-to-end</span> solution for our client.</p>
+                        </WorkExperienceWrapper>
+                        <WorkExperienceWrapper
+                            title={"Research Project"}
+                            role={"for my UCL BSc Final Year Project"}
+                            allow_explore={false}
+                            explore_link={null}
+                        >
+                            <p>I am currently working on a research project related to robust robotic grasping at 
+                                the <Anchor href="https://www.sml-group.cc">Statistical Machine Learning Group</Anchor>, as part of my 
+                                final year curriculum at UCL.</p>
                         </WorkExperienceWrapper>
                     </Parallax>
                 </ParallaxProvider>
