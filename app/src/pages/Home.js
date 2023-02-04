@@ -141,7 +141,7 @@ const Home = () => {
                     <div className='contacts-text'>
                         <p>I am currently looking for an <span className='purple'>internship/graduate scheme </span> 
                             opportunity to gain some more hands-on experience. I'd love learn and play around with
-                            new technologies in software engineering and data analysis!</p>
+                            new technologies in software engineering and machine learning!</p>
                         <button className='reach-out email' onClick={copy_email}>
                             <FontAwesomeIcon icon={faEnvelopeOpen}></FontAwesomeIcon>
                             <p>jhtkbusiness@gmail.com</p>

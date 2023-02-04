@@ -11,7 +11,7 @@ const WorkExperienceWrapper = ({ image, vid, title, role, allow_explore, explore
         <div className="exp-wrapper">
             {
                 vid != null &&
-                <video className='exp-video' autoPlay loop muted>
+                <video className='exp-video' autoPlay loop muted controls>
                     <source src={vid} type="video/mp4"></source>
                     Your browser does not support the video tag.
                 </video>
