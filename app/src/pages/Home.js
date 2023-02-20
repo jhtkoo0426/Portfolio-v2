@@ -32,7 +32,7 @@ const Home = () => {
                     </Parallax>
                     <Parallax speed={20}>
                         <p className='about'>I am currently pursuing a <span className='purple'>Computer Science</span> degree
-                            at University College London, with a special focus applications of machine learning in finance.</p>
+                            at University College London, with a special focus on applications of machine learning in finance.</p>
                     </Parallax>
                 </ParallaxProvider>
             </Container>
