@@ -109,12 +109,31 @@
                     color: var(--dark-grey);
 
                     &:hover {
+                        transition: all .25s ease-in-out;
                         border: 1px solid var(--purple);
                         background-color: var(--purple);
                         color: var(--white);
+
+                        span {
+                            transition: all .25s ease-in-out;
+                            color: var(--white);
+                        }
                     }
 
                     p { margin-left: 5%; }
+
+                    span {
+                        width: 100%;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        transition: all .25s ease-in-out;
+
+                        .click-to-copy {
+                            transition: all .25s ease-in-out;
+                            color: var(--light-grey);
+                        }
+                    }
 
                     &.email { cursor: pointer;}
                 }

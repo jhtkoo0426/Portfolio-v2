@@ -3,7 +3,7 @@ import Container from '../components/Container';
 import WorkExperienceWrapper from '../components/WorkExperienceWrapper';
 import TechStack from '../components/TechStack';
 
-import { Parallax, ParallaxProvider } from "react-scroll-parallax";
+import {Parallax, ParallaxProvider} from "react-scroll-parallax";
 
 import l4s_demo from "../videos/l4s-landing-demo.mp4";
 import guiana_demo from "../videos/guiana-aapl.mp4";
@@ -12,7 +12,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelopeOpen, faPhone } from '@fortawesome/free-solid-svg-icons';
 
 import "../css/workExperienceWrapper.scss";
-import { useRef } from 'react';
 
 
 const Home = () => {
@@ -32,18 +31,19 @@ const Home = () => {
                     </Parallax>
                     <Parallax speed={20}>
                         <p className='about'>I am currently pursuing a <span className='purple'>Computer Science</span> degree
-                            at University College London, with a special focus on applications of machine learning in finance.</p>
+                            at University College London. I am passionate about combining my love for statistics and programming to solve complex 
+                            problems.</p>
                     </Parallax>
                 </ParallaxProvider>
             </Container>
             <Container id={"about-me"}>
-                <p className='large-text'>My journey into the world of machine learning started with my fascination towards the
-                    incredible achievements of AlphaGo, which made history in 2016 for becoming the first AI program to defeat a
-                    human world champion in Go. As a regular Go player who has always been interested in technology and 
-                    game-playing, I was thoroughly impressed by AlphaGo's mastery of such a complex and strategic game like Go. 
-                    This not only sparked my interest in the field of ML but also showed me the limitless potential of AI to solve 
-                    real-world problems. I was inspired to learn more and become part of this exciting field, constantly pushing
-                    the boundaries of what is possible through continuous learning and innovation.</p>
+                <p className='large-text'>In early 2021, I particpated in the 6th Hex Cambridge hackathon, where I developed a simple
+                    arbitrage algorithm with 2 friends. We used machine learning techniques and real-time data feeds to build a system 
+                    that could accurately predict price differences between two markets and execute trades to capitalize on those 
+                    differences.This opportunity sparked my interest in the intersection of tech and finance, which made me realise the 
+                    potential of combining my technical skills with my newfound interest in finance. Since then, I have been taking courses
+                    in finance and analysis methods, and I have been exploring projects and opportunities in the field. I am excited to bring
+                    my passion and technical skills to a role where I can make a meaningful impact.</p>
             </Container>
             <Container id={"experience-intro"}>
                 <h1 className='subtitle'>Work Experience</h1>
@@ -107,9 +107,9 @@ const Home = () => {
                             vid={guiana_demo}
                             github_link={"https://github.com/jhtkoo0426/Guiana-Chestnut"}
                         >
-                            <p>Guiana Chestnut (Money Tree) is my most ambitious project so far that combines multiple 
-                                technologies that I have acquired so far, from full-stack web development to stock 
-                                analysis.</p>
+                            <p>This is my most ambitious project so far that combines multiple technologies that I have 
+                                acquired along my journey, including NLP for market sentiment analysis, data analysis
+                                for balance sheets and web development.</p>
                             <br></br>
                             <p>Why re-invent the wheel when so many screening services are available? The main is I 
                                 hope that this project can demonstrate my skillset through developing an end-to-end 
@@ -143,8 +143,11 @@ const Home = () => {
                             opportunity to gain some more hands-on experience. I'd love learn and play around with
                             new technologies in software engineering and machine learning!</p>
                         <button className='reach-out email' onClick={copy_email}>
-                            <FontAwesomeIcon icon={faEnvelopeOpen}></FontAwesomeIcon>
-                            <p>jhtkbusiness@gmail.com</p>
+                            <span>
+                                <FontAwesomeIcon icon={faEnvelopeOpen}></FontAwesomeIcon>
+                                <p>jhtkbusiness@gmail.com</p>
+                                <p className='click-to-copy'>Click to copy!</p>
+                            </span>
                         </button>
                         <p>You can also find me via <span className='span'>phone</span>:</p>
                         <div className='reach-out'>
