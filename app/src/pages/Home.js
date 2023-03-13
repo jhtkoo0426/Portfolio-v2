@@ -1,10 +1,6 @@
 import Anchor from '../components/Anchor';
 import Container from '../components/Container';
 import WorkExperienceWrapper from '../components/WorkExperienceWrapper';
-import TechStack from '../components/TechStack';
-
-import {Parallax, ParallaxProvider} from "react-scroll-parallax";
-
 import l4s_demo from "../videos/l4s-landing-demo.mp4";
 import guiana_demo from "../videos/guiana-aapl.mp4";
 import pathfinder_demo from "../media/pathfinder-screenshot.png";
@@ -22,19 +18,13 @@ const Home = () => {
     return (
         <div className='homepage'>
             <Container id={"landing"}>
-                <ParallaxProvider>
-                    <Parallax speed={0}>
-                        <p className='intro'>Hi there, I'm Justin!</p>
-                        <br></br>
-                        <h1 className='intro-title'>I'm a <span className='span purple'>Student Developer</span> Turning 
-                        Your Paperballs Into a Paperplane</h1>
-                    </Parallax>
-                    <Parallax speed={20}>
-                        <p className='about'>I am currently pursuing a <span className='purple'>Computer Science</span> degree
-                            at University College London. I am passionate about combining my love for statistics and programming to solve complex 
-                            problems.</p>
-                    </Parallax>
-                </ParallaxProvider>
+                <p className='intro'>Hi there, I'm Justin!</p>
+                <br></br>
+                <h1 className='intro-title'>I'm a <span className='span purple'>Student Developer</span> Turning 
+                Your Paperballs Into a Paperplane</h1>
+                <p className='about'>I am currently pursuing a <span className='purple'>Computer Science</span> degree
+                    at University College London. I am passionate about combining my love for statistics and programming to solve complex 
+                    problems.</p>
             </Container>
             <Container id={"about-me"}>
                 <p className='large-text'>In early 2021, I particpated in the 6th Hex Cambridge hackathon, where I developed a simple
@@ -49,88 +39,79 @@ const Home = () => {
                 <h1 className='subtitle'>Work Experience</h1>
             </Container>
             <Container id={"work-experience"}>
-                <ParallaxProvider>
-                    <Parallax speed={15}>
-                        <WorkExperienceWrapper
-                            vid={l4s_demo}
-                            title={"Look4SchoolsUK"}
-                            role={"Business Analyst (Student Job, Part-time)"}
-                            allow_explore={true}
-                            explore_link={null}
-                        >
-                            {/* Role Description as props.children */}
-                            <p>During university, I worked at Look4SchoolsUK, an education platform. In a span of 2 years, 
-                                I developed a <span className='purple'>webapp prototype</span> for the company, which 
-                                <span className='purple'> prevented loopholes</span> in some of its web flows. I also 
-                                helped with ad-hoc tasks including <span className='purple'>data collection and 
-                                analysis</span> on UK school data.</p>
-                        </WorkExperienceWrapper>
-                    </Parallax>
-                    <Parallax speed={35}>
-                        <WorkExperienceWrapper
-                            title={"UCL Industry Exchange Network"}
-                            role={"Software Engineer"}
-                            allow_explore={false}
-                            explore_link={null}
-                        >
-                            {/* Role Description as props.children */}
-                            <p>I was fortunate to participate in the exchange network with 2 coursemates on a Natural Language 
-                                Processing project. We were able to apply our knowledge in <span className='purple'>
-                                software development cycles</span> (gathering requirements, prototyping, testing, etc.) to 
-                                develop an <span className='purple'>end-to-end</span> solution for our client.</p>
-                        </WorkExperienceWrapper>
-                        <WorkExperienceWrapper
-                            title={"Research Project"}
-                            role={"for my UCL BSc Final Year Project"}
-                            allow_explore={false}
-                            explore_link={null}
-                        >
-                            <p>I am currently working on a research project related to robust robotic grasping at 
-                                the <Anchor href="https://www.sml-group.cc">Statistical Machine Learning Group</Anchor>, as part of my 
-                                final year curriculum at UCL.</p>
-                        </WorkExperienceWrapper>
-                    </Parallax>
-                </ParallaxProvider>
+                <WorkExperienceWrapper
+                    vid={l4s_demo}
+                    title={"Look4SchoolsUK"}
+                    role={"Business Analyst (Student Job, Part-time)"}
+                    allow_explore={true}
+                    explore_link={null}
+                >
+                    {/* Role Description as props.children */}
+                    <p>During university, I worked at Look4SchoolsUK, an education platform. In a span of 2 years, 
+                        I developed a <span className='purple'>webapp prototype</span> for the company, which 
+                        <span className='purple'> prevented loopholes</span> in some of its web flows. I also 
+                        helped with ad-hoc tasks including <span className='purple'>data collection and 
+                        analysis</span> on UK school data.</p>
+                </WorkExperienceWrapper>
+                <div>
+                    <WorkExperienceWrapper
+                        title={"UCL Industry Exchange Network"}
+                        role={"Software Engineer"}
+                        allow_explore={false}
+                        explore_link={null}
+                    >
+                        {/* Role Description as props.children */}
+                        <p>I was fortunate to participate in the exchange network with 2 coursemates on a Natural Language 
+                            Processing project. We were able to apply our knowledge in <span className='purple'>
+                            software development cycles</span> (gathering requirements, prototyping, testing, etc.) to 
+                            develop an <span className='purple'>end-to-end</span> solution for our client.</p>
+                    </WorkExperienceWrapper>
+                    <WorkExperienceWrapper
+                        title={"Research Project"}
+                        role={"for my UCL BSc Final Year Project"}
+                        allow_explore={false}
+                        explore_link={null}
+                    >
+                        <p>I am currently working on a research project related to robust robotic grasping at 
+                            the <Anchor href="https://www.sml-group.cc">Statistical Machine Learning Group</Anchor>, as part of my 
+                            final year curriculum at UCL.</p>
+                    </WorkExperienceWrapper>
+                </div>
+                
             </Container>
             <Container id={"works-intro"}>
                 <h1 className='subtitle'>Selected Works</h1>
             </Container>
             <Container id={"works"}>
-                <ParallaxProvider>
-                    <Parallax speed={15}>
-                        <WorkExperienceWrapper
-                            title={"Guiana Chestnut"}
-                            role={"Featured project"}
-                            allow_explore={true}
-                            explore_link={null}
-                            tech_stack={["Python", "Django", "Finnhub.io API", "Sentiment Analysis"]}
-                            vid={guiana_demo}
-                            github_link={"https://github.com/jhtkoo0426/Guiana-Chestnut"}
-                        >
-                            <p>This is my most ambitious project so far that combines multiple technologies that I have 
-                                acquired along my journey, including NLP for market sentiment analysis, data analysis
-                                for balance sheets and web development.</p>
-                            <br></br>
-                            <p>Why re-invent the wheel when so many screening services are available? The main is I 
-                                hope that this project can demonstrate my skillset through developing an end-to-end 
-                                system, built using highly-transferrable skills.</p>
-                        </WorkExperienceWrapper>
-                    </Parallax>
-                    <Parallax speed={35}>
-                        <WorkExperienceWrapper
-                            title={"Pathfinder"}
-                            allow_explore={false}
-                            explore_link={null}
-                            tech_stack={["Python", "Path-finding algorithms", "Data structures"]}
-                            image={pathfinder_demo}
-                            github_link={"https://github.com/jhtkoo0426/Pathfinder"}
-                        >
-                            <p>An interactive web application that visualises the route-finding process between 2 London 
-                                Underground stations. The project is based off one of my university couresworks on data
-                                structures and algorithms.</p>
-                        </WorkExperienceWrapper>
-                    </Parallax>
-                </ParallaxProvider>
+                <WorkExperienceWrapper
+                    title={"Guiana Chestnut"}
+                    role={"Featured project"}
+                    allow_explore={true}
+                    explore_link={null}
+                    tech_stack={["Python", "Django", "Finnhub.io API", "Sentiment Analysis"]}
+                    vid={guiana_demo}
+                    github_link={"https://github.com/jhtkoo0426/Guiana-Chestnut"}
+                >
+                    <p>This is my most ambitious project so far that combines multiple technologies that I have 
+                        acquired along my journey, including NLP for market sentiment analysis, data analysis
+                        for balance sheets and web development.</p>
+                    <br></br>
+                    <p>Why re-invent the wheel when so many screening services are available? The main is I 
+                        hope that this project can demonstrate my skillset through developing an end-to-end 
+                        system, built using highly-transferrable skills.</p>
+                </WorkExperienceWrapper>
+                <WorkExperienceWrapper
+                    title={"Pathfinder"}
+                    allow_explore={false}
+                    explore_link={null}
+                    tech_stack={["Python", "Path-finding algorithms", "Data structures"]}
+                    image={pathfinder_demo}
+                    github_link={"https://github.com/jhtkoo0426/Pathfinder"}
+                >
+                    <p>An interactive web application that visualises the route-finding process between 2 London 
+                        Underground stations. The project is based off one of my university couresworks on data
+                        structures and algorithms.</p>
+                </WorkExperienceWrapper>
             </Container>
             <Container id={"contacts"}>
                 <div className='contacts-container'>
