@@ -9,35 +9,28 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons';
 const WorkExperienceWrapper = ({ image, vid, title, role, allow_explore, explore_link, github_link, tech_stack, children }) => {
     return (
         <div className="exp-wrapper">
-            {
-                vid != null &&
-                <video className='exp-video' autoPlay loop muted controls>
-                    <source src={vid} type="video/mp4"></source>
-                    Your browser does not support the video tag.
-                </video>
-            }
-            {
-                image != null &&
-                <img className='exp-image' src={image} alt=""></img>
-            }
-            <div className="exp-content">
-                <div className='exp-content-title-wrapper'>
-                    <h1 className="exp-content-title">{title}</h1>
-                    {   
-                        github_link != null &&
-                        <a href={github_link} target={"_blank"}>
-                            <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
-                        </a>
-                    }
-                </div>
-                <p className='exp-role'>{role}</p>
-                <br></br>
-                {children}
-                <br></br>
-                {
-                    tech_stack != null &&
-                    <TechStack tags={tech_stack}></TechStack>
+            <div className='exp-content-title-wrapper'>
+                <p className="exp-content-title">{title}</p>
+                {   
+                    github_link != null &&
+                    <a href={github_link} target={"_blank"}>
+                        <FontAwesomeIcon icon={faGithub}></FontAwesomeIcon>
+                    </a>
                 }
+            </div>
+            <div className="exp-content">
+                {
+                    vid != null &&
+                    <video className='exp-video' autoPlay loop muted controls>
+                        <source src={vid} type="video/mp4"></source>
+                        Your browser does not support the video tag.
+                    </video>
+                }
+                {
+                    image != null &&
+                    <img className='exp-image' src={image} alt=""></img>
+                }
+                {children}
                 <br></br>
                 {
                     allow_explore == true &&
