@@ -6,7 +6,7 @@
 
 <hr>
 
-![Alt](app/src/media/portfolio-landing.png)
+![Alt](/app/src/media/portfolio-landing.png)
 
 ## Local Deployment
 If you do not have Node.js and npm installed, please refer to [this document](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
