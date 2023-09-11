@@ -9,11 +9,12 @@
 ![Alt](app/src/media/portfolio-landing.png)
 
 ## Local Deployment
+If you do not have Node.js and npm installed, please refer to [this document](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm).
 1. Navigate to the portfolio app directory
     ```
     cd app
     ```
-2. Install and use the correct version of Node using <a href="https://github.com/nvm-sh/nvm">NVM</a>
+2. Install and use the correct version of Node using [NVM](https://github.com/nvm-sh/nvm)
     ```
     nvm install
     ```
@@ -35,16 +36,6 @@
     ```
     npm run deploy
     ```
-
-
-## TODOs
-- [x] Add more design variety to work showcases
-- [x] Add scrolling effects
-- [ ] CSS webkit
-- [x] Add splash screen animation
-- [x] Mobile responsiveness
-- [x] Refactor code into React.js components, especially containers
-- [x] Improve CSS code quality (potentially with SASS)
 
 
 ## Disclaimer/Copyright
