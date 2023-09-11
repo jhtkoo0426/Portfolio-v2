@@ -1,7 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import React, { useState, useEffect } from "react";
+
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import React, { useState, useEffect } from "react";
+import About from "./pages/About";
 
 import "../src/css/app.scss";
 import "../src/css/components.scss";
@@ -12,7 +14,8 @@ const AppRoute = () => {
     <Routes>
       {/* Webframe for portfolio (Layout is the base template) */}
       <Route path="/" element={<Layout/>}>
-        <Route index element={<Home/>} />
+        <Route path="home" index element={<Home/>} />
+        <Route path="about" element={<About/>} />
       </Route>
     </Routes>
   );
@@ -27,7 +30,7 @@ export default function App() {
     // Loading time transition into app page
     setTimeout(() => {
       setIsLoading(false);
-    }, 3000);
+    }, 300);
   }, []);  
 
   return isLoading ? 

@@ -1,14 +1,16 @@
-$purple: #420FE7;
 $white: #FFF;
 $dark-grey: #0B131D;
-$light-grey: #F0F0F2;
-$p-large: calc(10px + 0.85vw);
+$purple: #420FE7;
+$mid-purple: #574CF2;
+$light-purple: #c3c4fc;
+$p-large: calc(10px + 0.95vw);
 $p-mid: calc(10px + 0.55vw);
 $p-small: calc(8px + 0.45vw);
 $h1-large: calc(20px + 3.5vw);
 $h1-mid: calc(20px + 3vw);
 $h1-small: calc(15px + 2vw);
 $h1-e-small: calc(10px + 1.5vw);
+
 
 *{
     margin: 0;
@@ -19,11 +21,13 @@ $h1-e-small: calc(10px + 1.5vw);
     -moz-osx-font-smoothing: grayscale;
 }
 
+
 :root {
     --white: #{$white};
     --dark-grey: #{$dark-grey};
-    --light-grey: #{$light-grey};
     --purple: #{$purple};
+    --mid-purple: #{$mid-purple};
+    --light-purple: #{$light-purple};
 
     --p-large: #{$p-large};
     --p-mid: #{$p-mid};
@@ -32,24 +36,8 @@ $h1-e-small: calc(10px + 1.5vw);
     --h1-small: #{$h1-small};
     --h1-e-small: #{$h1-e-small};
 
-
-    // Scrollbar CSS
-    ::-webkit-scrollbar {
-        width: 14px;
-        background-color: transparent;
-    }
-      
-    ::-webkit-scrollbar-track {
-        border: solid 3px transparent;
-        background: var(--light-grey);
-    }
-      
-    ::-webkit-scrollbar-thumb {
-        background-color: var(--dark-grey);
-        border-radius: 10px;
-        border: solid 3px transparent;
-        background-clip: content-box;
-    }
+    font-family: 'Averta';
+    color: var(--white);
 }
 
 @font-face {
@@ -82,33 +70,57 @@ $h1-e-small: calc(10px + 1.5vw);
     src: url("../fonts/Noah/TTF/Noah\ Head\ Bold.otf");
 }
 
-p {
-    line-height: 160%;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+@font-face {
+    font-family: 'NotoSansJP';
+    src: url("../fonts/Noto_Sans_JP/static/NotoSansJP-Regular.ttf");
 }
 
+@font-face {
+    font-family: 'NotoSansJPBold';
+    src: url("../fonts/Noto_Sans_JP/static/NotoSansJP-Bold.ttf");
+}
 
-// Styling for spans (text highlighting & underlining)
-span { color: var(--dark-grey); }
-span.purple { color: var(--purple); }
+@font-face {
+    font-family: 'Averta';
+    src: url("../fonts/Averta/averta-regular.otf");
+}
 
+@font-face {
+    font-family: 'AvertaBold';
+    src: url("../fonts/Averta/averta-bold.otf");
+}
 
-// Styling for headers
+p {
+    padding: 15px 5px;
+    line-height: 160%;
+}
+
+h1, h2, h3 {
+    font-family: 'AvertaBold';
+    color: var(--white);
+}
+
+p, a, svg {
+    font-family: 'Averta';
+}
+
+// Styling for headers & text components
 .subtitle {
-    font-family: 'NoahBold';
     font-size: var(--h1-mid);
-    color: var(--dark-grey);
 }
 
 .large-text {
-    font-family: 'NoahBold';
     font-size: var(--h1-e-small);
-    color: var(--dark-grey);
+}
+
+.text {
+    &.pink {
+        color: var(--light-purple);
+    }
 }
 
 
-// CSS for splashscreen
+// Splash screen
 .splash-screen {
     height: 100vh;
     display: flex;
@@ -176,56 +188,86 @@ span.purple { color: var(--purple); }
 }
 
 
-// CSS for app container layout
-.app {
-    width: 100%;
-    height: 100%;
-    animation: app_fadeIn 2s ease;
-    background-color: var(--light-grey);
+// App container layout
+.app-container {
+    display: grid;
 }
 
-@keyframes app_fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
+
+// Background styling (blue bg with white stripes)
+.app-background {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.25fr repeat(4, 1.75fr) 1.25fr;
+
+    .col {
+        background-color: var(--purple);
+        border-right: 1px solid var(--mid-purple);
+    }
+}
+
+
+// Actual app content wrapper
+.app {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 2;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr repeat(4, 1.5fr) 1fr;
 }
 
 
 // Topnav CSS
-.topnav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    height: 15vh;
-    padding: 0 5%;
+.topnav-container {
+    // grid-area: header;
+    height: 20vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 10;
+    grid-row: 1;
+    grid-column: 2 / 6;      // Align with background
     
-    a {
+    .home-icon {
         text-decoration: none;
-        font-family: 'InterBold';
         font-size: 1.8rem;
-        color: var(--dark-grey);
+        color: var(--white);
+    }
+
+    .topnav-link {
+        margin-left: 30px;
+        text-decoration: none;
+        color: var(--white);
+
+        &.text {
+            font-size: 0.95rem;
+        }
     }
 
     .topnav-menu {
-        a {
-            position: relative;
-            margin-left: 30px;
-            transition: all .25s ease-in-out;
+        .topnav-icon {
             font-size: var(--p-large);
-            color: var(--dark-grey);
-
-            &:hover { color: var(--purple); }
+            color: var(--white);
         }
     }
 }
 
+.main-container {
+    grid-row: 2;
+    grid-column: 2 / 6;      // Align with background
+}
+
+.homepage {
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+}
+
 
 // Botnav CSS
-.botnav {
-    height: 10vh;
-    text-align: center;
-    color: var(--dark-grey);
+.botnav-container {
+    grid-row: 3;
+    grid-column: 2 / 6;      // Align with background
 }
