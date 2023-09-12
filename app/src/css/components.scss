@@ -13,6 +13,7 @@
 
 // HugeTitle.js react component
 .huge-title {
+    margin: 5% 0;
     font-family: 'AvertaBold';
     font-size: 5vw;
     line-height: 5.5vw;
@@ -33,13 +34,19 @@
 
 // Anchor.js react component
 .anchor {
-    margin-left: 30px;
+    margin: 0 15px;
+    align-items: center;
     text-decoration: none;
     font-family: 'AvertaBold';
-    font-size: 1.8rem;
-    color: var(--dark-grey);
-    text-decoration: none;
+    color: var(--white);
     font-size: 0.95rem;
+
+    &.inline {
+        margin: 0;
+        font-family: 'AvertaBold';
+        color: var(--white);
+        font-size: var(--default-font-size);
+    }
 }
 
 
@@ -48,8 +55,8 @@
     margin: 5% 0;
     text-decoration: none;
     color: var(--white);
-    border-top: 1px solid var(--mid-purple);
-    border-bottom: 1px solid var(--mid-purple);
+    // border-top: 1px solid var(--mid-purple);
+    // border-bottom: 1px solid var(--mid-purple);
 
     video {
         width: 100%;

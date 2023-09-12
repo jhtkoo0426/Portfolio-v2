@@ -1,5 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import Anchor from "../components/Anchor";
+import HugeTitle from "../components/HugeTitle";
+import TwoColContainer from "../components/TwoColumnContainer";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -36,11 +38,12 @@ const Layout = () => {
             <Outlet/>
           </div>
           <nav className="botnav-container">
-            <div className="botnav">
-              <div className="social-links-bar">
-                jhtkbusiness@gmail.com
-              </div>
-            </div>
+            {/* Contacts section */}
+            <HugeTitle>Interested? Let's Get in Touch!</HugeTitle>
+            <TwoColContainer left_col_boundary={2} right_col_boundary={5} >
+                <p>I am mostly active on <Anchor href={"https://www.linkedin.com/in/koo-justin/"} inline={true}>LinkedIn
+                </Anchor> and <Anchor href={"https://github.com/jhtkoo0426"} inline={true}>GitHub</Anchor>.</p>
+            </TwoColContainer>
           </nav>
         </div>
       </div>

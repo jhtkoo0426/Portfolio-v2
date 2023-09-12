@@ -21,7 +21,9 @@ $light-purple: #c3c4fc;
     --purple: #{$purple};
     --mid-purple: #{$mid-purple};
     --light-purple: #{$light-purple};
+    --default-font-size: 18px;
 
+    line-height: 160%;
     font-family: 'Averta';
     color: var(--white);
 }
@@ -77,9 +79,8 @@ $light-purple: #c3c4fc;
 }
 
 p {
-    line-height: 160%;
     padding: 15px 0;
-    font-size: 16px;
+    font-size: var(--default-font-size);
     color: var(--light-purple);
 }
 
@@ -241,10 +242,10 @@ p, a, svg {
 
 // Botnav CSS
 .botnav-container {
-    height: 30vh;
+    height: 40vh;
     grid-row: 3;
     grid-column: 2 / 6;      // Align with background
-    display: grid;
-    grid-template-columns: 1.25fr repeat(4, 1.75fr) 1.25fr;
-    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

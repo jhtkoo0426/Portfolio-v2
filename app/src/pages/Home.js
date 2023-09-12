@@ -49,7 +49,7 @@ const Home = () => {
                 </CaseStudyWrapper>
             </TwoColContainer>
 
-            <TwoColContainer
+            {/* <TwoColContainer
                 left_col_boundary={1}
                 right_col_boundary={4}>
                 <CaseStudyWrapper
@@ -63,14 +63,14 @@ const Home = () => {
                         in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
                         cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </CaseStudyWrapper>
-            </TwoColContainer>
+            </TwoColContainer> */}
 
             <TwoColContainer
-                left_col_boundary={2}
-                right_col_boundary={5}>
+                left_col_boundary={1}
+                right_col_boundary={4}>
                 <CaseStudyWrapper
-                    id={"case-study3"}
-                    project_id={3}
+                    id={"case-study2"}
+                    project_id={2}
                     vid={l4s_demo}
                     title={"Analysing and Visualising the Performance of UK Schools"}
                     organisation={"Look4SchoolsUK Ltd."}
