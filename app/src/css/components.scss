@@ -2,23 +2,32 @@
 // Container.js react component
 .twocol-container {
     display: grid;
+
+    &#intro {
+        p {
+            padding: 15px 5px;
+        }
+    }
 }
 
 
 // HugeTitle.js react component
 .huge-title {
     font-family: 'AvertaBold';
-    // font-weight: bold;
-    font-size: 6vw;
-    line-height: 6.5vw;
+    font-size: 5vw;
+    line-height: 5.5vw;
+
+    &.transparent {
+        -webkit-text-stroke: 1px #CECAE3;
+        color: rgba($color: #000000, $alpha: 0.0);
+    }
 }
 
 
 // Subtitle.js react component
 .subtitle {
     font-family: 'AvertaBold';
-    font-size: 2vw;
-    line-height: 2vw;
+    font-size: 26px;
 }
 
 
@@ -31,6 +40,24 @@
     color: var(--dark-grey);
     text-decoration: none;
     font-size: 0.95rem;
+}
+
+
+// CaseStudyWrapper.js react component
+.case-study-wrapper {
+    margin: 5% 0;
+    text-decoration: none;
+    color: var(--white);
+    border-top: 1px solid var(--mid-purple);
+    border-bottom: 1px solid var(--mid-purple);
+
+    video {
+        width: 100%;
+    }
+
+    .cs-content {
+        padding: 5% 10%;
+    }
 }
 
 

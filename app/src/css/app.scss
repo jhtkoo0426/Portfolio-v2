@@ -3,13 +3,6 @@ $dark-grey: #0B131D;
 $purple: #420FE7;
 $mid-purple: #574CF2;
 $light-purple: #c3c4fc;
-$p-large: calc(10px + 0.95vw);
-$p-mid: calc(10px + 0.55vw);
-$p-small: calc(8px + 0.45vw);
-$h1-large: calc(20px + 3.5vw);
-$h1-mid: calc(20px + 3vw);
-$h1-small: calc(15px + 2vw);
-$h1-e-small: calc(10px + 1.5vw);
 
 
 *{
@@ -28,13 +21,6 @@ $h1-e-small: calc(10px + 1.5vw);
     --purple: #{$purple};
     --mid-purple: #{$mid-purple};
     --light-purple: #{$light-purple};
-
-    --p-large: #{$p-large};
-    --p-mid: #{$p-mid};
-    --h1-large: #{$h1-large};
-    --h1-mid: #{$h1-mid};
-    --h1-small: #{$h1-small};
-    --h1-e-small: #{$h1-e-small};
 
     font-family: 'Averta';
     color: var(--white);
@@ -91,8 +77,10 @@ $h1-e-small: calc(10px + 1.5vw);
 }
 
 p {
-    padding: 15px 5px;
     line-height: 160%;
+    padding: 15px 0;
+    font-size: 16px;
+    color: var(--light-purple);
 }
 
 h1, h2, h3 {
@@ -102,21 +90,6 @@ h1, h2, h3 {
 
 p, a, svg {
     font-family: 'Averta';
-}
-
-// Styling for headers & text components
-.subtitle {
-    font-size: var(--h1-mid);
-}
-
-.large-text {
-    font-size: var(--h1-e-small);
-}
-
-.text {
-    &.pink {
-        color: var(--light-purple);
-    }
 }
 
 
@@ -216,7 +189,7 @@ p, a, svg {
     z-index: 2;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1fr repeat(4, 1.5fr) 1fr;
+    grid-template-columns: 1.25fr repeat(4, 1.75fr) 1.25fr;
 }
 
 
@@ -268,6 +241,10 @@ p, a, svg {
 
 // Botnav CSS
 .botnav-container {
+    height: 30vh;
     grid-row: 3;
     grid-column: 2 / 6;      // Align with background
+    display: grid;
+    grid-template-columns: 1.25fr repeat(4, 1.75fr) 1.25fr;
+    align-items: center;
 }
