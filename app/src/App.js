@@ -14,7 +14,7 @@ const AppRoute = () => {
     <Routes>
       {/* Webframe for portfolio (Layout is the base template) */}
       <Route path="/" element={<Layout/>}>
-        <Route path="home" index element={<Home/>} />
+        <Route path="/" index element={<Home/>} />
         <Route path="about" element={<About/>} />
       </Route>
     </Routes>

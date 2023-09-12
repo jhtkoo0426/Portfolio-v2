@@ -19,7 +19,7 @@ const Layout = () => {
         <div className="app">
           <div className="cursor"></div>
           <nav className="topnav-container">
-            <Link to="home" className="home-icon">j.</Link>
+            <Link to="/" className="home-icon">j.</Link>
             <div className="topnav-menu">
               <Anchor href={"https://www.linkedin.com/in/koo-justin/"}>
                 <FontAwesomeIcon icon={faLinkedinIn} className="topnav-icon"></FontAwesomeIcon>
