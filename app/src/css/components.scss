@@ -8,6 +8,10 @@
             padding: 15px 5px;
         }
     }
+
+    &#contacts {
+        width: 60%;
+    }
 }
 
 
@@ -17,16 +21,12 @@
     font-family: 'AvertaBold';
     font-size: 5vw;
     line-height: 5.5vw;
-
-    &.transparent {
-        -webkit-text-stroke: 1px #CECAE3;
-        color: rgba($color: #000000, $alpha: 0.0);
-    }
 }
 
 
 // Subtitle.js react component
 .subtitle {
+    line-height: 140%;
     font-family: 'AvertaBold';
     font-size: 26px;
 }
@@ -64,6 +64,11 @@
 
     .cs-content {
         padding: 5% 10%;
+
+        &:hover {
+            transition: all 1s ease;
+            background-color: rgba($color: #574CF2, $alpha: 0.4);
+        }
     }
 }
 

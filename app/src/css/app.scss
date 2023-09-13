@@ -23,7 +23,7 @@ $light-purple: #c3c4fc;
     --light-purple: #{$light-purple};
     --default-font-size: 18px;
 
-    line-height: 160%;
+    line-height: 180%;
     font-family: 'Averta';
     color: var(--white);
 }
@@ -242,7 +242,7 @@ p, a, svg {
 
 // Botnav CSS
 .botnav-container {
-    height: 40vh;
+    height: 80vh;
     grid-row: 3;
     grid-column: 2 / 6;      // Align with background
     display: flex;
