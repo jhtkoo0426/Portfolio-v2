@@ -10,7 +10,7 @@ const Home = () => {
     return (
         <div className='homepage'>
             {/* Introduction */}
-            <p>Hi, I'm Justin!</p>
+            <p className='name'>Hi, I'm Justin!</p>
             <HugeTitle
                 left_col_boundary={1}
                 right_col_boundary={5}
@@ -55,18 +55,14 @@ const Home = () => {
                 <CaseStudyWrapper
                     id={"case-study2"}
                     project_id={2}
-                    vid={epidemic_demo}
-                    title={"Simulating an epidemic in a controlled environment"}
-                    organisation={"N/A"}
-                    url={"https://github.com/jhtkoo0426/Epidemic-Simulation"}
+                    title={"AutoFAQ - A Text-to-Speech Analysis Tool for NHS Employees"}
+                    organisation={"The Apperta CIC Foundation"}
+                    url={"http://students.cs.ucl.ac.uk/2021/group17/index.html"}
                     url_type={"external"}
                     >
-                    {/* TODO: Directly integrate the simulation into portfolio later */}
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>A multi-disciplinary team project under the UCL Industry Exchange Network. Focused on improving and optimising an
+                        existing project to provide NHS practitioners with non-technical means to analyse voice recordings between doctors
+                        and patients. </p>
                 </CaseStudyWrapper>
             </TwoColContainer>
 
@@ -76,15 +72,32 @@ const Home = () => {
                 <CaseStudyWrapper
                     id={"case-study3"}
                     project_id={3}
+                    vid={epidemic_demo}
+                    title={"Simulating an epidemic in a controlled environment"}
+                    organisation={"N/A"}
+                    url={"https://github.com/jhtkoo0426/Epidemic-Simulation"}
+                    url_type={"external"}
+                    >
+                    {/* TODO: Directly integrate the simulation into portfolio later */}
+                    <p>A web-faced simulation that visualises the impact of various environmental factors and human behaviour on the spread of epidemics. Inspiration
+                        taken from <Anchor href={"https://www.youtube.com/watch?v=gxAaO2rsdIs"} inline={true}>3Blue1Brown - Simulating an Epidemic</Anchor>.
+                    </p>
+                </CaseStudyWrapper>
+            </TwoColContainer>
+
+            <TwoColContainer
+                left_col_boundary={1}
+                right_col_boundary={4}>
+                <CaseStudyWrapper
+                    id={"case-study4"}
+                    project_id={4}
                     vid={l4s_demo}
                     title={"Analysing and Visualising the Performance of UK Schools"}
                     organisation={"Look4SchoolsUK Ltd."}
                     url_type={"internal"}>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt 
-                        ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
-                        in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat 
-                        cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
+                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 </CaseStudyWrapper>
             </TwoColContainer>
         </div>

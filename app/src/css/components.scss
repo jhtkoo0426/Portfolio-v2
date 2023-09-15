@@ -70,7 +70,7 @@
         padding: 5% 10%;
 
         &:hover {
-            transition: all 1s ease;
+            transition: all .5s ease;
             background-color: rgba($color: #574CF2, $alpha: 0.4);
         }
     }
@@ -83,7 +83,23 @@
 
 // Medium Devices, Desktops
 @media only screen and (max-width: 992px) {
-    
+    .twocol-container {
+        grid-column: 1 / 5 !important;
+    }
+
+    .huge-title {
+        grid-column: 1 / 5 !important;
+    }
+
+    .case-study-wrapper {
+        .cs-content {
+            padding: 0;
+        }
+    }
+
+    .anchor {
+        &.inline { font-size: var(--responsive-font-size); }
+    }
 }
 
 // Small Devices, Tablets

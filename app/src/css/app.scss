@@ -22,6 +22,7 @@ $light-purple: #c3c4fc;
     --mid-purple: #{$mid-purple};
     --light-purple: #{$light-purple};
     --default-font-size: 18px;
+    --responsive-font-size: 14px;
 
     line-height: 160%;
     font-family: 'Averta';
@@ -216,9 +217,7 @@ p, a, svg {
         text-decoration: none;
         color: var(--white);
 
-        &.text {
-            font-size: 0.95rem;
-        }
+        &.text {  font-size: 0.95rem; }
     }
 
     .topnav-menu {
@@ -237,6 +236,10 @@ p, a, svg {
 .homepage {
     display: grid;
     grid-template-columns: repeat(4, 25%);
+
+    .name {
+        grid-column: 1 / 5;
+    }
 }
 
 
@@ -248,4 +251,37 @@ p, a, svg {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    p { width: 80%; }
 }
+
+
+// Handling mobile responsiveness
+// Large Devices, Wide Screens
+@media only screen and (max-width: 1200px) { }
+
+// Medium Devices, Desktops
+@media only screen and (max-width: 992px) { }
+
+// Small Devices, Tablets
+@media only screen and (max-width: 768px) {
+    * { line-height: 140%; }
+    p { font-size: var(--responsive-font-size); }
+    .topnav-container {
+        height: 12vh;
+        .topnav-link {
+            margin-left: 15px;
+        }
+    }
+
+    .botnav-container {
+        height: 50vh;
+        p { width: 100%; }
+    }
+}
+
+// Extra Small Devices, Phones 
+@media only screen and (max-width: 480px) { }
+
+// Custom, iPhone Retina
+@media only screen and (max-width : 320px) { }

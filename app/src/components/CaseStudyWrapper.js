@@ -18,7 +18,7 @@ const CaseStudyWrapper = ({ id, children, project_id, image, vid, title, organis
     }
     if (url_type === "internal") {
         return (
-            <Link className="case-study-wrapper" to={url}>
+            <Link className="case-study-wrapper " to={url}>
                 {/* Image/Video */}
                 {
                     vid != null &&
