@@ -15,7 +15,7 @@ const Home = () => {
                 left_col_boundary={1}
                 right_col_boundary={5}
                 is_transparent={false}>
-                I'm a Machine Learning Engineer, Architecting the Future with a Foundation of Data</HugeTitle>
+                I'm a Data Analyst, Architecting the Future with a Foundation of Data</HugeTitle>
             <TwoColContainer
                 id={"intro"}
                 left_col_boundary={3}
@@ -30,7 +30,7 @@ const Home = () => {
                 left_col_boundary={2}
                 right_col_boundary={5}
                 is_transparent={false}>
-                Case Studies & Projects
+                Featured Projects & Studies
             </HugeTitle>
             <TwoColContainer
                 left_col_boundary={2}
@@ -74,14 +74,14 @@ const Home = () => {
                     project_id={3}
                     vid={epidemic_demo}
                     title={"Simulating an epidemic in a controlled environment"}
-                    organisation={"N/A"}
+                    organisation={"Personal Project"}
                     url={"https://github.com/jhtkoo0426/Epidemic-Simulation"}
                     url_type={"external"}
                     >
                     {/* TODO: Directly integrate the simulation into portfolio later */}
-                    <p>A web-faced simulation that visualises the impact of various environmental factors and human behaviour on the spread of epidemics. Inspiration
-                        taken from <Anchor href={"https://www.youtube.com/watch?v=gxAaO2rsdIs"} inline={true}>3Blue1Brown - Simulating an Epidemic</Anchor>.
-                    </p>
+                    <p>An interactive web-based simulation that illustrates how the spread of epidemics is influenced by environmental factors 
+                        and human behavior, drawing inspiration from <Anchor href={"https://www.youtube.com/watch?v=gxAaO2rsdIs"} inline={true}>
+                            3Blue1Brown - Simulating an Epidemic</Anchor>.</p>
                 </CaseStudyWrapper>
             </TwoColContainer>
 
@@ -95,9 +95,8 @@ const Home = () => {
                     title={"Analysing and Visualising the Performance of UK Schools"}
                     organisation={"Look4SchoolsUK Ltd."}
                     url_type={"internal"}>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse 
-                        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p>Evaluated the educational performance of UK schools by considering various metrics, including GCE and GCSE results, 
+                        Oxbridge admission statistics, third-party inspection reports, and government-provided school data spreadsheets.</p>
                 </CaseStudyWrapper>
             </TwoColContainer>
         </div>

@@ -96,15 +96,13 @@
             padding: 0;
         }
     }
-
-    .anchor {
-        &.inline { font-size: var(--responsive-font-size); }
-    }
 }
 
 // Small Devices, Tablets
 @media only screen and (max-width: 768px) {
-    
+    .anchor {
+        &.inline { font-size: var(--responsive-font-size); }
+    }
 }
 
 // Extra Small Devices, Phones 

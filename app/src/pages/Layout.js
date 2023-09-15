@@ -29,7 +29,7 @@ const Layout = () => {
               <Anchor href={"https://github.com/jhtkoo0426"}>
                 <FontAwesomeIcon icon={faGithub} className="topnav-icon"></FontAwesomeIcon>
               </Anchor>
-              <Link to="about" className="topnav-link">About</Link>
+              <Link to="about" className="topnav-link">About Me</Link>
               <Link to="/files/justin_koo_resume.pdf" className="topnav-link" target="_blank" download>Resume</Link>
             </div>
           </nav>
