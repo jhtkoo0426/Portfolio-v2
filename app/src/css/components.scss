@@ -18,10 +18,13 @@
 
 // HugeTitle.js react component
 .huge-title {
-    margin: 7.5% 0;
+    margin: 5% 0;
     font-family: 'AvertaBold';
-    font-size: 5vw;
-    line-height: 5.5vw;
+    font-size: 5.5vw;
+    line-height: 6vw;
+
+    &#project-title {  margin: 12.5% 0; }
+    &#interests { margin-top: 12.5%; }
 }
 
 
@@ -79,6 +82,8 @@
 
 // Medium Devices, Desktops
 @media only screen and (max-width: 992px) {
+    p { font-size: 16px; }
+
     .twocol-container {
         grid-column: 1 / 5 !important;
     }

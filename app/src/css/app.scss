@@ -235,11 +235,9 @@ p, a, svg {
     grid-column: 2 / 6;      // Align with background
 }
 
-.homepage {
+.homepage, .aboutpage {
     display: grid;
     grid-template-columns: repeat(4, 25%);
-
-    .name { grid-column: 1 / 5; }
 }
 
 
@@ -269,7 +267,7 @@ p, a, svg {
     p { font-size: var(--responsive-font-size); }
     .topnav-container {
         height: 12vh;
-        
+
         .topnav-link { margin-left: 15px; }
     }
 
