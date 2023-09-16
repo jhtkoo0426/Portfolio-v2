@@ -6,6 +6,7 @@
     &#intro {
         p {
             padding: 15px 5px;
+            line-height: 180%;
         }
     }
 
@@ -17,7 +18,7 @@
 
 // HugeTitle.js react component
 .huge-title {
-    margin: 5% 0;
+    margin: 7.5% 0;
     font-family: 'AvertaBold';
     font-size: 5vw;
     line-height: 5.5vw;
@@ -38,13 +39,13 @@
     align-items: center;
     text-decoration: none;
     font-family: 'AvertaBold';
-    color: var(--white);
+    color: var(--black);
     font-size: 0.95rem;
 
     &.inline {
         margin: 0;
         font-family: 'AvertaBold';
-        color: var(--white);
+        color: var(--black);
         font-size: var(--default-font-size);
     }
 }
@@ -54,11 +55,11 @@
 .case-study-wrapper {
     margin: 5% 0;
     text-decoration: none;
-    color: var(--white);
+    color: var(--black);
     // border-top: 1px solid var(--mid-purple);
     // border-bottom: 1px solid var(--mid-purple);
 
-    video {
+    video, img {
         width: 100%;
     }
 
@@ -68,11 +69,6 @@
 
     .cs-content {
         padding: 5% 10%;
-
-        &:hover {
-            transition: all .5s ease;
-            background-color: rgba($color: #574CF2, $alpha: 0.4);
-        }
     }
 }
 
@@ -93,7 +89,7 @@
 
     .case-study-wrapper {
         .cs-content {
-            padding: 0;
+            padding: 2%;
         }
     }
 }

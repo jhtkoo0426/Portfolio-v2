@@ -1,10 +1,12 @@
 import Anchor from '../components/Anchor';
 import HugeTitle from '../components/HugeTitle';
+import Container from '../components/Container';
 import TwoColContainer from '../components/TwoColumnContainer';
 import CaseStudyWrapper from '../components/CaseStudyWrapper';
 import dissertation_demo from "../videos/dissertation-demo.mp4";
 import l4s_demo from "../videos/l4s-landing-demo.mp4";
 import epidemic_demo from "../videos/epidemic-demo.mp4";
+import nlp from "../media/nlp.png";
 
 const Home = () => {
     return (
@@ -24,7 +26,7 @@ const Home = () => {
                 my love for statistics and programming to solve business problems and inform better 
                 business decision making.</p>
             </TwoColContainer>
-
+            
             {/* Case Studies & Projects Section */}
             <HugeTitle
                 left_col_boundary={2}
@@ -55,6 +57,7 @@ const Home = () => {
                 <CaseStudyWrapper
                     id={"case-study2"}
                     project_id={2}
+                    image={nlp}
                     title={"AutoFAQ - A Text-to-Speech Analysis Tool for NHS Employees"}
                     organisation={"The Apperta CIC Foundation"}
                     url={"http://students.cs.ucl.ac.uk/2021/group17/index.html"}

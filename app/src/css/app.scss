@@ -1,4 +1,5 @@
 $white: #FFF;
+$black: #000;
 $dark-grey: #0B131D;
 $purple: #420FE7;
 $mid-purple: #574CF2;
@@ -17,6 +18,7 @@ $light-purple: #c3c4fc;
 
 :root {
     --white: #{$white};
+    --black: #{$black};
     --dark-grey: #{$dark-grey};
     --purple: #{$purple};
     --mid-purple: #{$mid-purple};
@@ -26,7 +28,7 @@ $light-purple: #c3c4fc;
 
     line-height: 160%;
     font-family: 'Averta';
-    color: var(--white);
+    color: var(--black);
 }
 
 @font-face {
@@ -82,12 +84,12 @@ $light-purple: #c3c4fc;
 p {
     padding: 15px 0;
     font-size: var(--default-font-size);
-    color: var(--light-purple);
+    color: var(--black); // color: var(--light-purple);
 }
 
 h1, h2, h3 {
     font-family: 'AvertaBold';
-    color: var(--white);
+    color: var(--black);
 }
 
 p, a, svg {
@@ -175,11 +177,11 @@ p, a, svg {
     grid-column: 1;
     z-index: 1;
     display: grid;
-    grid-template-columns: 1.25fr repeat(4, 1.75fr) 1.25fr;
+    grid-template-columns: 1.5fr repeat(4, 1.5fr) 1.5fr;
 
     .col {
-        background-color: var(--purple);
-        border-right: 1px solid var(--mid-purple);
+        background-color: var(--white);
+        // border-right: 1px solid var(--black);
     }
 }
 
@@ -191,7 +193,7 @@ p, a, svg {
     z-index: 2;
     display: grid;
     grid-template-rows: auto 1fr auto;
-    grid-template-columns: 1.25fr repeat(4, 1.75fr) 1.25fr;
+    grid-template-columns: 1.5fr repeat(4, 1.5fr) 1.5fr;
 }
 
 
@@ -209,13 +211,13 @@ p, a, svg {
     .home-icon {
         text-decoration: none;
         font-size: 1.8rem;
-        color: var(--white);
+        color: var(--black);
     }
 
     .topnav-link {
         margin-left: 30px;
         text-decoration: none;
-        color: var(--white);
+        color: var(--black);
 
         &.text {  font-size: 0.95rem; }
     }
@@ -223,7 +225,7 @@ p, a, svg {
     .topnav-menu {
         .topnav-icon {
             font-size: var(--p-large);
-            color: var(--white);
+            color: var(--black);
         }
     }
 }
@@ -237,9 +239,7 @@ p, a, svg {
     display: grid;
     grid-template-columns: repeat(4, 25%);
 
-    .name {
-        grid-column: 1 / 5;
-    }
+    .name { grid-column: 1 / 5; }
 }
 
 
@@ -269,9 +269,8 @@ p, a, svg {
     p { font-size: var(--responsive-font-size); }
     .topnav-container {
         height: 12vh;
-        .topnav-link {
-            margin-left: 15px;
-        }
+        
+        .topnav-link { margin-left: 15px; }
     }
 
     .botnav-container {
