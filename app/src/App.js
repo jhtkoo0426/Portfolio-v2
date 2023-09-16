@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 
 import Layout from "./pages/Layout";
 import Home from "./pages/Home";
-import About from "./pages/About";
 
 import "../src/css/app.scss";
 import "../src/css/components.scss";
@@ -15,7 +14,6 @@ const AppRoute = () => {
       {/* Webframe for portfolio (Layout is the base template) */}
       <Route path="/" element={<Layout/>}>
         <Route path="/" index element={<Home/>} />
-        <Route path="about" element={<About/>} />
       </Route>
     </Routes>
   );

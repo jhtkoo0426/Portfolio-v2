@@ -60,9 +60,9 @@ const Home = () => {
                     url={"http://students.cs.ucl.ac.uk/2021/group17/index.html"}
                     url_type={"external"}
                     >
-                    <p>A multi-disciplinary team project under the UCL Industry Exchange Network. Focused on improving and optimising an
+                    <p>A client-faced team project under the UCL Industry Exchange Network. Focused on improving and optimising an
                         existing project to provide NHS practitioners with non-technical means to analyse voice recordings between doctors
-                        and patients. </p>
+                        and patients.</p>
                 </CaseStudyWrapper>
             </TwoColContainer>
 

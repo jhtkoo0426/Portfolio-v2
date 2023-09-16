@@ -29,7 +29,6 @@ const Layout = () => {
               <Anchor href={"https://github.com/jhtkoo0426"}>
                 <FontAwesomeIcon icon={faGithub} className="topnav-icon"></FontAwesomeIcon>
               </Anchor>
-              <Link to="about" className="topnav-link">About Me</Link>
               <Link to="/files/justin_koo_resume.pdf" className="topnav-link" target="_blank" download>Resume</Link>
             </div>
           </nav>
@@ -43,7 +42,7 @@ const Layout = () => {
             <p>I am currently looking for a part-time/full-time position as a Data Analyst or Machine Learning Engineer.
                    I am mostly active on <Anchor href={"https://www.linkedin.com/in/koo-justin/"} inline={true}>LinkedIn
                 </Anchor> and <Anchor href={"https://github.com/jhtkoo0426"} inline={true}>GitHub</Anchor>. You can also reach
-                out to me via jhtkbusiness@gmail.com!</p>
+                out to me via jhtkbusiness@gmail.com.</p>
           </nav>
         </div>
       </div>
