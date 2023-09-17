@@ -8,7 +8,7 @@
         height: 15vh;
         grid-row: 1;
         grid-column: 1 / 4;
-        padding: 0 5%;
+        margin: 0 5%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -78,9 +78,13 @@
     }
     
     .botnav-container {
-        height: 30vh;
+        height: 20vh;
         grid-row: 3;
         grid-column: 1 / 4;
+        margin: 0 5%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 

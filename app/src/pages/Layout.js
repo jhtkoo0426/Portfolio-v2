@@ -49,7 +49,9 @@ const Layout = () => {
         </div>
         
         {/* Bottom navigation bar */}
-        <nav className="botnav-container">botnav</nav>
+        <nav className="botnav-container">
+          Made with passion using React.js
+        </nav>
       </div>
     );
 };
