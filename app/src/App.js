@@ -6,11 +6,14 @@ import About from "./pages/About";
 import Home from "./pages/Home";
 
 
-// General app SCSS
+// General App & pages SCSS
 import "../src/css/app.scss";
+import "../src/css/layout.scss";
+import "../src/css/home.scss";
 
 // Specific component SCSS
-import "../src/css/huge_title.scss";
+import "../src/css/anchor.scss";
+import "../src/css/title.scss";
 import "../src/css/simple_showcase.scss";
 
 

@@ -1,20 +1,27 @@
 // SCSS File for HugeTitle.js
 .title {
-
     // Varying sizes of titles. Options: huge | Sstandard | small
     &.huge {
+        padding: 12% 0;
         font-family: 'AvertaBold';
         font-size: 5.5rem;
         line-height: 6rem;
+
+        &#intro {
+            padding-top: 10%;
+            padding-bottom: 0;
+        }
     }
 
     &.standard {
+        padding: 5% 0;
         font-family: 'AvertaBold';
         font-size: 4rem;
         line-height: 4.5rem;
     }
 
     &.small {
+        padding: 5% 0;
         font-family: 'Averta';
         font-size: 2rem;
     }

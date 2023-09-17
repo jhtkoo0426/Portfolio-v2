@@ -1,5 +1,9 @@
+// SCSS file for App.js
 $white: #FFF;
-$black: #000;
+$white-purple: #EBEAEE;
+$black: #2c2c2c;
+$purple: #420FE7;
+$orange: #f07e6e;
 
 
 *{
@@ -14,8 +18,13 @@ $black: #000;
 
 :root {
     --white: #{$white};
+    --white-purple: #{$white-purple};
     --black: #{$black};
+    --purple: #{$purple};
+    --orange: #{$orange};
+    color: var(--black);
 }
+
 
 
 @font-face {
@@ -36,6 +45,33 @@ $black: #000;
 @font-face {
     font-family: 'AvertaBold';
     src: url("../fonts/Averta/averta-bold.otf");
+}
+
+p {
+    line-height: 160%;
+    font-size: 18px;
+    font-family: 'Averta';
+}
+
+
+
+
+// Scrollbar
+::-webkit-scrollbar {
+    width: 14px;
+    background-color: transparent;
+}
+  
+::-webkit-scrollbar-track {
+    border: solid 3px transparent;
+    background: var(--white-purple);
+}
+  
+::-webkit-scrollbar-thumb {
+    background-color: var(--purple);
+    border-radius: 10px;
+    border: solid 3px transparent;
+    background-clip: content-box;
 }
 
 

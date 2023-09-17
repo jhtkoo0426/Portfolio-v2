@@ -1,15 +1,10 @@
 // React.js component for anchor with applied CSS effects.
-const Anchor = ({ id, children, href, inline }) => {
-    if (inline) {
-        return (
-            <a className={`anchor inline`} href={href} target="_blank" id={id} rel="noreferrer">{ children }</a>
-        )
-    } else {
-        return (
-            <a className={`anchor`} href={href} target="_blank" id={id} rel="noreferrer">{ children }</a>
-        )
-    }
-    
+// inline (bool): True for an inline anchor, false for a block anchor.
+// underline (bool): True for an underline animation.
+const Anchor = ({ id, children, href, inline, underline }) => {
+    return (
+        <a className={"anchor" + (inline === true ? " inline" : "") + (underline ===  true ? " underline" : "")} href={href} target="_blank" id={id} rel="noreferrer">{ children }</a>
+    )
 }
 
 export default Anchor

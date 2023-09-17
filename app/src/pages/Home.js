@@ -5,48 +5,71 @@ import Title from "../components/Title";
 
 const Home = () => {
     return (
-        <div className='home'>
+        <div className="home">
             {/* Introduction */}
-            <Title id={"intro"} size={"huge"} is_transparent={false}>
-                a dyslexic creative who listens
-            </Title>
-            <Title id={"subintro"} size={"small"}>
+            <div className="intro">
+                <Title id={"intro"} size={"huge"} is_transparent={false}>
+                    an analytical mind who explores
+                </Title>
+                <div class="blob blob-inner">
+                    <span></span>
+                    <span></span>
+                    <a class="content" href="#depth-intro">
+                        <p>find out more...</p>
+                    </a>
+                </div>
+            </div>
+            <Title size={"small"}>
                 a data analyst architecting the future with a foundation of data.
             </Title>
 
-            {/* A list of core skills */}
-            <div className="skills-container">
-                <p>Some of my core skills</p>
-                <span>data analysis</span>
-                <span>machine learning</span>
-                <span>modelling & statistics</span>
-                <span>data visualization</span>
-            </div>
-
             {/* Depth intro */}
-            <div className="depth-intro">
+            <div className="depth-intro" id="depth-intro">
                 <p>My name is Justin, a Data Analyst and Machine Learning Engineer currently
                 based in London, UK.</p>
+                <br></br>
                 <p>My experience comes from working with multi-disciplinary teams and projects 
                 to solve real-life problems through data analytics and computing skills. During 
                 projects, I maintain frequent communication between teammates and clients to 
                 ensure everyone works on the same page.</p>
+                <br></br>
                 <p>I prefer to listen carefully before providing solutions and analytics with 
                 a perfect blend of preferences of my partners/clients, my experience, research 
                 and best practices.</p>
+
+                {/* A list of core skills */}
+                <div className="skills-container">
+                    <p>Some of my core skills</p>
+                    <span>data analysis</span>
+                    <span>machine learning</span>
+                    <span>modelling & statistics</span>
+                    <span>data visualization</span>
+                </div>
+                
                 <Title id={"contact"} size={"small"}>
-                    Want to learn how flexible and easy-going I am? Just <Anchor href={""}>say hello</Anchor>
+                    Want to learn how flexible and easy-going I am? Just <Anchor inline={true} href={""}>say hello</Anchor>
                 </Title>
                 <p>or keep scrolling if you want to learn more...</p>
             </div>
 
             {/* Brief project showcases */}
-            <div className="showcase-container">
+            <div className="showcases-container">
                 <SimpleShowcase detailed={false} project_name={"Robust Robotic Grasping Utilising Touch Sensing"} tags={["test", "test"]}>
                     <p>My final year dissertation project on developing a robust learning-guided 
                         system for grasping unknown objects, conducted with the SMLG at UCL. The 
                         presented model optimises common training considerations such as balancing 
                         trade offs between dataset size and accuracy.</p>
+                </SimpleShowcase>
+                <SimpleShowcase detailed={false} project_name={"AutoFAQ - A Text-to-Speech Analysis Tool for NHS Employees"} tags={["test", "test"]}>
+                    <p>A client-faced team project under the UCL Industry Exchange Network. Focused 
+                        on improving the pipeline and visualisation tools of an existing web 
+                        application to provide NHS practitioners with non-technical means to 
+                        analyse voice recordings between doctors and patients.</p>
+                </SimpleShowcase>
+                <SimpleShowcase detailed={false} project_name={"Analysing and Visualizing the Academic Performance of UK Schools"} tags={["test"]}>
+                    <p>Evaluated the educational performance of UK schools via various metrics 
+                        such as GCE and GCSE results, Oxbridge admission statistics, third-party 
+                        inspection reports, and government data on school information.</p>
                 </SimpleShowcase>
             </div>
         </div>
