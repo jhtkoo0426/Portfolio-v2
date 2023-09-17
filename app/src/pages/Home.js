@@ -49,7 +49,7 @@ const Home = () => {
                 </div>
 
                 <Title id={"contact"} size={"small"}>
-                    Want to learn how flexible and easy-going I am? Just <Anchor inline={true} href={""}>say hello</Anchor>
+                    Want to learn how flexible and easy-going I am? Just <Anchor  target={true} inline={true} href={""}>say hello</Anchor>
                 </Title>
                 <p>or keep scrolling if you want to learn more...</p>
             </div>

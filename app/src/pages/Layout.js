@@ -1,10 +1,10 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
 
 import Anchor from "../components/Anchor";
+import Title from "../components/Title";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faLinkedinIn, faGithub } from "@fortawesome/free-brands-svg-icons";
-
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faEnvelope, faL } from '@fortawesome/free-solid-svg-icons';
 
 
 const Layout = () => {
@@ -23,7 +23,7 @@ const Layout = () => {
           </div>
           <div className="topnav-menu">
             <Link className="anchor underline" to={"/about"}>about</Link>
-            <Link className="anchor underline" to={"/contact"}>contact</Link>
+            <Anchor inline={false} underline={true} href={"#contacts"} target={false}>contact</Anchor>
           </div>
         </nav>
 
@@ -31,12 +31,12 @@ const Layout = () => {
         <nav className="sidenav-container">
           <ul>
             <li>
-              <Anchor underline={true} href={"https://www.linkedin.com/in/koo-justin/"}>
+              <Anchor target={true} underline={true} href={"https://www.linkedin.com/in/koo-justin/"}>
                 LinkedIn
               </Anchor>
             </li>
             <li>
-              <Anchor underline={true} href={"https://github.com/jhtkoo0426"}>
+              <Anchor target={true} underline={true} href={"https://github.com/jhtkoo0426"}>
                 GitHub
               </Anchor>
             </li>
@@ -49,8 +49,19 @@ const Layout = () => {
         </div>
         
         {/* Bottom navigation bar */}
-        <nav className="botnav-container">
-          Made with passion using React.js
+        <nav className="botnav-container" id="contacts">
+          <div className="contacts-container">
+            <div>
+              <p>Still curious about how to bring those imaginative thoughts to life?</p>
+              <Title size={"small"}>let's get in touch!</Title>
+              <p>or you can find me via <Anchor target={true} inline={true} underline={false} href={"https://www.linkedin.com/in/koo-justin/"}>LinkedIn</Anchor>!</p>
+            </div>
+            <div className="blob2">
+              <Anchor className="blob2" href={"mailto:jhtkbusiness@gmail.com"} target={true} underline={false}>
+                <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
+              </Anchor>
+            </div>
+          </div>
         </nav>
       </div>
     );
