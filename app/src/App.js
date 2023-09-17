@@ -5,8 +5,13 @@ import Layout from "./pages/Layout";
 import About from "./pages/About";
 import Home from "./pages/Home";
 
+
+// General app SCSS
 import "../src/css/app.scss";
-import "../src/css/components.scss";
+
+// Specific component SCSS
+import "../src/css/huge_title.scss";
+import "../src/css/simple_showcase.scss";
 
 
 const AppRoute = () => {

@@ -1,0 +1,43 @@
+// SCSS File for HugeTitle.js
+.title {
+
+    // Varying sizes of titles. Options: huge | Sstandard | small
+    &.huge {
+        font-family: 'AvertaBold';
+        font-size: 5.5rem;
+        line-height: 6rem;
+    }
+
+    &.standard {
+        font-family: 'AvertaBold';
+        font-size: 4rem;
+        line-height: 4.5rem;
+    }
+
+    &.small {
+        font-family: 'Averta';
+        font-size: 2rem;
+    }
+
+    &.transparent {
+        -webkit-text-stroke: 1px var(--black);
+        color: transparent;
+    }
+}
+
+
+// Handling mobile responsiveness
+// Large Devices, Wide Screens
+@media only screen and (max-width: 1200px) {}
+
+// Medium Devices, Desktops
+@media only screen and (max-width: 992px) {}
+
+// Small Devices, Tablets
+@media only screen and (max-width: 768px) {}
+
+// Extra Small Devices, Phones 
+@media only screen and (max-width: 480px) {}
+
+// Custom, iPhone Retina
+@media only screen and (max-width : 320px) {}
