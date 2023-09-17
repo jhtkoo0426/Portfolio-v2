@@ -1,5 +1,18 @@
 // SCSS file for simple_showcase.js component.
+.showcase-container {
+    padding: 10% 0;
 
+    .project-name { font-family: 'AvertaBold'; }
+
+    .tags {
+        padding: 10px 0 20px 0;
+        span { margin-right: 25px; }
+    }
+
+    .showcase-vid, .showcase-image {
+        width: 100%;
+    }
+}
 
 
 // Handling mobile responsiveness

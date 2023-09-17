@@ -1,6 +1,9 @@
 import Anchor from "../components/Anchor";
 import SimpleShowcase from "../components/SimpleShowcase";
 import Title from "../components/Title";
+import dissertation_demo from "../videos/dissertation-demo.mp4";
+import autofaq from "../media/nlp.png";
+import l4s from "../videos/l4s-demo.mp4";
 
 
 const Home = () => {
@@ -20,14 +23,12 @@ const Home = () => {
                 </div>
             </div>
             <Title size={"small"}>
-                a data analyst architecting the future with a foundation of data.
+                Hi! I'm Justin, a data analyst architecting the future with a foundation of data, 
+                currently living in the UK.
             </Title>
 
             {/* Depth intro */}
             <div className="depth-intro" id="depth-intro">
-                <p>My name is Justin, a Data Analyst and Machine Learning Engineer currently
-                based in London, UK.</p>
-                <br></br>
                 <p>My experience comes from working with multi-disciplinary teams and projects 
                 to solve real-life problems through data analytics and computing skills. During 
                 projects, I maintain frequent communication between teammates and clients to 
@@ -36,6 +37,7 @@ const Home = () => {
                 <p>I prefer to listen carefully before providing solutions and analytics with 
                 a perfect blend of preferences of my partners/clients, my experience, research 
                 and best practices.</p>
+                <br></br>
 
                 {/* A list of core skills */}
                 <div className="skills-container">
@@ -45,7 +47,7 @@ const Home = () => {
                     <span>modelling & statistics</span>
                     <span>data visualization</span>
                 </div>
-                
+
                 <Title id={"contact"} size={"small"}>
                     Want to learn how flexible and easy-going I am? Just <Anchor inline={true} href={""}>say hello</Anchor>
                 </Title>
@@ -54,22 +56,26 @@ const Home = () => {
 
             {/* Brief project showcases */}
             <div className="showcases-container">
-                <SimpleShowcase detailed={false} project_name={"Robust Robotic Grasping Utilising Touch Sensing"} tags={["test", "test"]}>
-                    <p>My final year dissertation project on developing a robust learning-guided 
-                        system for grasping unknown objects, conducted with the SMLG at UCL. The 
-                        presented model optimises common training considerations such as balancing 
-                        trade offs between dataset size and accuracy.</p>
+                <Title size={"standard"}>Case Studies & Projects</Title>
+                <SimpleShowcase detailed={false} project_name={"Robust Robotic Grasping Utilising Touch Sensing"} 
+                tags={["Machine Learning", "Data Collection"]} vid={dissertation_demo}>
+                    <p>My final year dissertation project on developing a robust learning-guided system 
+                    for grasping unknown objects, conducted with the <Anchor inline={true} underline={false}>
+                    Statistical Machine Learning Group @ UCL</Anchor>. The presented model optimises common 
+                    training considerations such as balancing trade offs between dataset size and accuracy.</p>
                 </SimpleShowcase>
-                <SimpleShowcase detailed={false} project_name={"AutoFAQ - A Text-to-Speech Analysis Tool for NHS Employees"} tags={["test", "test"]}>
+                <SimpleShowcase detailed={false} project_name={"AutoFAQ - A Text-to-Speech Analysis Tool for NHS Employees"} 
+                tags={["Data Visualization", "NLP"]} image={autofaq}>
                     <p>A client-faced team project under the UCL Industry Exchange Network. Focused 
-                        on improving the pipeline and visualisation tools of an existing web 
-                        application to provide NHS practitioners with non-technical means to 
-                        analyse voice recordings between doctors and patients.</p>
+                    on improving the pipeline and visualisation tools of an existing web 
+                    application to provide NHS practitioners with non-technical means to 
+                    analyse voice recordings between doctors and patients.</p>
                 </SimpleShowcase>
-                <SimpleShowcase detailed={false} project_name={"Analysing and Visualizing the Academic Performance of UK Schools"} tags={["test"]}>
+                <SimpleShowcase detailed={false} project_name={"Analysing and Visualizing the Academic Performance of UK Schools"} 
+                tags={["Data Analysis", "Data Visualization", "Data Collection"]} vid={l4s}>
                     <p>Evaluated the educational performance of UK schools via various metrics 
-                        such as GCE and GCSE results, Oxbridge admission statistics, third-party 
-                        inspection reports, and government data on school information.</p>
+                    such as GCE and GCSE results, Oxbridge admission statistics, third-party 
+                    inspection reports, and government data on school information.</p>
                 </SimpleShowcase>
             </div>
         </div>

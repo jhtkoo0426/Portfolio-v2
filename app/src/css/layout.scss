@@ -1,7 +1,7 @@
 // SCSS file for Layout.js.
 .app-container {
     display: grid;
-    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-columns: 1fr 1.8fr 1fr;
     background-color: var(--white-purple);
 
     .topnav-container {
@@ -92,8 +92,9 @@
 // Medium Devices, Desktops
 @media only screen and (max-width: 992px) {
     .app-container {
+        grid-template-columns: 1fr 3fr 1fr;
         .topnav-container {
-            grid-template-columns: 1fr 6fr 1fr;
+            grid-template-columns: 1fr 3fr 1fr;
         }
     }
 }
