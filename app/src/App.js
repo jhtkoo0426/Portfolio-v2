@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, { useState, useEffect } from "react";
+import React from "react";
 
 import Layout from "./pages/Layout";
 import About from "./pages/About";
@@ -14,8 +14,8 @@ const AppRoute = () => {
     <Routes>
       {/* Webframe for portfolio (Layout is the base template) */}
       <Route path="/" element={<Layout/>}>
-        <Route path="/about" element={<About/>} />
         <Route path="/" index element={<Home/>} />
+        <Route path="/about" element={<About/>} />
       </Route>
     </Routes>
   );
