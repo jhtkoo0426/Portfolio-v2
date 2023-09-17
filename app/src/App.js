@@ -23,31 +23,10 @@ const AppRoute = () => {
 
 // Main Function
 export default function App() {
-  // Declaring states for using splash screen.
-  const [isLoading, setIsLoading] = useState(true);
-
-  useEffect(() => {
-    // Loading time transition into app page
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 2000);
-  }, []);  
-
-  return isLoading ? 
-    // Page is still loading -> Display the splash screen
-    // TODO: Improve the splash screen animation
-    <div className="splash-screen">
-        <div className="splash-screen">
-            {/* https://codepen.io/aaroniker/pen/omvYNZ */}
-            <div class="loader circle">
-                <svg viewBox="0 0 80 80">
-                    <circle id="test" cx="40" cy="40" r="32"></circle>
-                </svg>
-            </div>
-        </div>
-    </div>:
+  return (
     // Page finished loading -> Load portfolio
     <BrowserRouter>
       <AppRoute />
     </BrowserRouter>
+  )
 }

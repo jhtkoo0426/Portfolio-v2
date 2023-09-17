@@ -1,113 +1,18 @@
 // CSS File for React.js components
-// Container.js react component
-.twocol-container {
-    display: grid;
-
-    &#intro {
-        p {
-            padding: 15px 5px;
-            line-height: 180%;
-        }
-    }
-
-    &#contacts {
-        width: 60%;
-    }
-}
-
-
-// HugeTitle.js react component
-.huge-title {
-    margin: 5% 0;
-    font-family: 'AvertaBold';
-    font-size: 5.5vw;
-    line-height: 6vw;
-
-    &#project-title {  margin: 12.5% 0; }
-    &#interests { margin-top: 12.5%; }
-}
-
-
-// Subtitle.js react component
-.subtitle {
-    line-height: 140%;
-    font-family: 'AvertaBold';
-    font-size: 26px;
-}
-
-
-// Anchor.js react component
-.anchor {
-    margin: 0 15px;
-    align-items: center;
-    text-decoration: none;
-    font-family: 'AvertaBold';
-    color: var(--black);
-    font-size: 0.95rem;
-
-    &.inline {
-        margin: 0;
-        font-family: 'AvertaBold';
-        color: var(--black);
-        font-size: var(--default-font-size);
-    }
-}
-
-
-// CaseStudyWrapper.js react component
-.case-study-wrapper {
-    margin: 5% 0;
-    text-decoration: none;
-    color: var(--black);
-    // border-top: 1px solid var(--mid-purple);
-    // border-bottom: 1px solid var(--mid-purple);
-
-    video, img {
-        width: 100%;
-    }
-
-    p {
-        line-height: 180%;
-    }
-
-    .cs-content {
-        padding: 5% 10%;
-    }
-}
 
 
 // Handling mobile responsiveness
 // Large Devices, Wide Screens
-@media only screen and (max-width: 1200px) { }
+@media only screen and (max-width: 1200px) {}
 
 // Medium Devices, Desktops
-@media only screen and (max-width: 992px) {
-    p { font-size: 16px; }
-
-    .twocol-container {
-        grid-column: 1 / 5 !important;
-    }
-
-    .huge-title {
-        grid-column: 1 / 5 !important;
-    }
-
-    .case-study-wrapper {
-        .cs-content {
-            padding: 2%;
-        }
-    }
-}
+@media only screen and (max-width: 992px) {}
 
 // Small Devices, Tablets
-@media only screen and (max-width: 768px) {
-    .anchor {
-        &.inline { font-size: var(--responsive-font-size); }
-    }
-}
+@media only screen and (max-width: 768px) {}
 
 // Extra Small Devices, Phones 
-@media only screen and (max-width: 480px) { }
+@media only screen and (max-width: 480px) {}
 
 // Custom, iPhone Retina
-@media only screen and (max-width : 320px) { }
+@media only screen and (max-width : 320px) {}
