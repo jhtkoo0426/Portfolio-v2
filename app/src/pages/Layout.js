@@ -23,7 +23,7 @@ const Layout = () => {
           </div>
           <div className="topnav-menu">
             <Link className="anchor underline" to={"/about"}>about</Link>
-            <Link className="anchor underline" to={"/"}>contact</Link>
+            <Link className="anchor underline" to={"/contact"}>contact</Link>
           </div>
         </nav>
 
