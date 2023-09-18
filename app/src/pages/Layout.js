@@ -1,4 +1,5 @@
 import { Outlet, Link, useLocation } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 
 import Anchor from "../components/Anchor";
 import Title from "../components/Title";
@@ -24,8 +25,7 @@ const Layout = () => {
           </div>
           <div className="topnav-menu">
             <Link className="anchor underline" to={"/about"}>about</Link>
-            <Link></Link>
-            <Anchor inline={false} underline={true} href={"/about#playground"} target={false}>projects</Anchor>
+            <HashLink smooth className="anchor underline" to={'/about/#playground'}>projects</HashLink>
             <Anchor inline={false} underline={true} href={"#contacts"} target={false}>contact</Anchor>
           </div>
         </nav>
