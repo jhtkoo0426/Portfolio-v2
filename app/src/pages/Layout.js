@@ -13,6 +13,7 @@ const Layout = () => {
     return (
       <div className="app-container">
         {/* Top navigation bar */}
+        <div className="empty-container"></div>
         <nav className="topnav-container">
           <div className="home-button">
             <Link to={"/"}>
@@ -23,6 +24,7 @@ const Layout = () => {
           </div>
           <div className="topnav-menu">
             <Link className="anchor underline" to={"/about"}>about</Link>
+            <Anchor inline={false} underline={true} href={"#playground"} target={false}>projects</Anchor>
             <Anchor inline={false} underline={true} href={"#contacts"} target={false}>contact</Anchor>
           </div>
         </nav>
@@ -44,9 +46,7 @@ const Layout = () => {
         </nav>
 
         {/* Container for the main content of the portfolio */}
-        <div className="main-container">
-          <Outlet/>
-        </div>
+        <Outlet/>
         
         {/* Bottom navigation bar */}
         <nav className="botnav-container" id="contacts">

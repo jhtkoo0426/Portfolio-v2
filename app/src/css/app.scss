@@ -1,7 +1,8 @@
 // SCSS file for App.js
 $white: #FFF;
 $white-purple: #EBEAEE;
-$black: #2c2c2c;
+$black: #1A1C1D;
+$dark-grey: #2c2c2c;
 $purple: #420FE7;
 $orange: #f07e6e;
 
@@ -20,9 +21,10 @@ $orange: #f07e6e;
     --white: #{$white};
     --white-purple: #{$white-purple};
     --black: #{$black};
+    --dark-grey: #{$dark-grey};
     --purple: #{$purple};
     --orange: #{$orange};
-    color: var(--black);
+    color: var(--dark-grey);
 }
 
 
@@ -53,7 +55,9 @@ p {
     font-family: 'Averta';
 }
 
-
+span.orange {
+    color: var(--orange);
+}
 
 
 // Scrollbar

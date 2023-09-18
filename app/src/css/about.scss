@@ -1,0 +1,67 @@
+// SCSS file for the About page.
+.about {
+    grid-column: 1 / 4;
+
+    // Uses a grid layout to make sure the practices container can SPAN the
+    // entire window width with the app-container grid layout.
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+
+    .about-intro {
+        grid-column: 2;
+        padding-top: 10%;
+        padding-bottom: 20%;
+    }
+
+    .practices-container {
+        grid-column: 1 / 4;
+        padding: 10% 0;
+
+        // This grid layout is used to align the text contents of the practices
+        // container with the rest of the original content.
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        background-color: var(--black);
+        color: var(--white);
+
+        .practices-content { grid-column: 2; }
+    }
+
+    .playground-container {
+        grid-column: 2;
+        padding: 20% 0;
+
+        .showcases {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+}
+
+
+
+// Handling mobile responsiveness
+// Large Devices, Wide Screens
+@media only screen and (max-width: 1200px) {}
+
+// Medium Devices, Desktops
+@media only screen and (max-width: 992px) {
+    .about {
+        grid-template-columns: 1fr 4fr 1fr;
+
+        .practices-container { grid-template-columns: 1fr 4fr 1fr; }
+
+        .playground-container {
+            .showcases { grid-template-columns: 1fr; }
+        }
+    }
+}
+
+// Small Devices, Tablets
+@media only screen and (max-width: 768px) {}
+
+// Extra Small Devices, Phones 
+@media only screen and (max-width: 480px) {}
+
+// Custom, iPhone Retina
+@media only screen and (max-width : 320px) {}

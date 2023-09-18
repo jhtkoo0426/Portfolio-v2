@@ -22,13 +22,14 @@ const Home = () => {
                     </a>
                 </div>
             </div>
-            <Title size={"small"}>
+            
+            {/* Depth intro */}
+            <Title size={"small"} id="depth-intro">
                 Hi! I'm Justin, a data analyst architecting the future with a foundation of data, 
                 currently living in the UK.
             </Title>
 
-            {/* Depth intro */}
-            <div className="depth-intro" id="depth-intro">
+            <div className="depth-intro">
                 <p>My experience comes from working with multi-disciplinary teams and projects 
                 to solve real-life problems through data analytics and computing skills. During 
                 projects, I maintain frequent communication between teammates and clients to 
@@ -39,17 +40,8 @@ const Home = () => {
                 and best practices.</p>
                 <br></br>
 
-                {/* A list of core skills */}
-                <div className="skills-container">
-                    <p>Some of my core skills</p>
-                    <span>data analysis</span>
-                    <span>machine learning</span>
-                    <span>modelling & statistics</span>
-                    <span>data visualization</span>
-                </div>
-
                 <Title id={"contact"} size={"small"}>
-                    Want to learn how flexible and easy-going I am? Just <Anchor  target={true} inline={true} href={""}>say hello</Anchor>
+                    Want to reach out? Just <Anchor  target={false} inline={true} href={"#contacts"}>say hello</Anchor>
                 </Title>
                 <p>or keep scrolling if you want to learn more...</p>
             </div>

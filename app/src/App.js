@@ -9,6 +9,7 @@ import Home from "./pages/Home";
 // General App & pages SCSS
 import "../src/css/app.scss";
 import "../src/css/layout.scss";
+import "../src/css/about.scss";
 import "../src/css/home.scss";
 
 // Specific component SCSS
