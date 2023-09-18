@@ -24,7 +24,8 @@ const Layout = () => {
           </div>
           <div className="topnav-menu">
             <Link className="anchor underline" to={"/about"}>about</Link>
-            <Anchor inline={false} underline={true} href={"#playground"} target={false}>projects</Anchor>
+            <Link></Link>
+            <Anchor inline={false} underline={true} href={"/about#playground"} target={false}>projects</Anchor>
             <Anchor inline={false} underline={true} href={"#contacts"} target={false}>contact</Anchor>
           </div>
         </nav>

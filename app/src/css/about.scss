@@ -13,7 +13,7 @@
         padding-bottom: 20%;
     }
 
-    .practices-container {
+    .skills-container {
         grid-column: 1 / 4;
         padding: 10% 0;
 
@@ -24,7 +24,15 @@
         background-color: var(--black);
         color: var(--white);
 
-        .practices-content { grid-column: 2; }
+        .skills-content {
+            grid-column: 2;
+
+            .list-of-skills {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-column-gap: 10%;
+            }
+        }
     }
 
     .playground-container {
@@ -51,6 +59,16 @@
 
         .practices-container { grid-template-columns: 1fr 4fr 1fr; }
 
+        .skills-container {
+            grid-template-columns: 1fr 4fr 1fr;
+            
+            .skills-content {
+                .list-of-skills {
+                    padding-top: 5%;
+                    grid-template-columns: 1fr;
+                }
+            }
+        }
         .playground-container {
             .showcases { grid-template-columns: 1fr; }
         }

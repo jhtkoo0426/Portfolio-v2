@@ -1,4 +1,5 @@
 import Anchor from "../components/Anchor";
+import Skill from "../components/Skill";
 import SimpleShowcase from "../components/SimpleShowcase";
 import Title from "../components/Title";
 
@@ -10,22 +11,41 @@ const About = () => {
         <div className="about">
             <div className="about-intro">
                 <Title size={"huge"}>Nice to meet <span className="orange"> you</span> too :)</Title>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                mollit anim id est laborum.</p>
-                <br></br>
-                <blockquote>
-                    <p>"Tell me and I forget. Teach me and I remember. Involve me and I learn."</p>
-                    <footer style={{textAlign: "right"}}><p>- Benjamin Franklin</p></footer>
-                </blockquote>
+                <p>I approach every challenge with curiosity and a growth mindset. I believe 
+                that the rapid evolution of technology requires continuous learning and 
+                adaptation. I stay up-to-date with the latest industry trends and embrace 
+                emerging technologies to stay ahead of the curve.</p>
             </div>
 
             {/* TODO: My praactices and approach to problems */}
-            <div className="practices-container">
-                <div className="practices-content">
-                    <p>Using the right tools with a well structured process leads to the collaboration’s 
-                    success</p>
-                    <Title size={"small"}>Excepteur sint occaecat cupidatat non proident, sunt in culpa 
-                    qui officia deserunt mollit anim id est laborum.</Title>
+            <div className="skills-container">
+                <div className="skills-content">
+                    <blockquote>
+                        <p>"Tell me and I forget. Teach me and I remember. Involve me and I learn."</p>
+                        <footer style={{textAlign: "right"}}><p>- Benjamin Franklin</p></footer>
+                    </blockquote>
+                    <Title size={"small"}>What sets me apart is my flexibility and eagerness to 
+                    explore different aspects of technology. Here's how I can contribute:</Title>
+                    <div className="list-of-skills">
+                        <Skill title={"Software Engineering"} number={"01"}>
+                            <p>I excel in developing software solutions that not only meet technical 
+                            requirements but also deliver exceptional user experiences. From designing 
+                            elegant user interfaces to optimizing code for efficiency, I'm dedicated to 
+                            delivering high-quality software.</p>
+                        </Skill>
+                        <Skill title={"Data Analysis"} number={"02"}>
+                            <p>My analytical mindset enables me to extract valuable insights from data. 
+                            I am skilled in using tools like Microsoft Excel, R and SQL (BigQuery, MySQL)
+                            to turn data into actionable information. Whether it's market trends, user 
+                            behavior, or financial data, I can uncover meaningful patterns.</p>
+                        </Skill>
+                        <Skill title={""} number={"03"}>
+                            <p>I approach every challenge with curiosity and a growth mindset. I believe 
+                            that the rapid evolution of technology requires continuous learning and 
+                            adaptation. I stay up-to-date with the latest industry trends and embrace 
+                            emerging technologies to stay ahead of the curve.</p>
+                        </Skill>
+                    </div>
                 </div>
             </div>
 

@@ -25,8 +25,8 @@ const Home = () => {
             
             {/* Depth intro */}
             <Title size={"small"} id="depth-intro">
-                Hi! I'm Justin, a data analyst architecting the future with a foundation of data, 
-                currently living in the UK.
+                Hi! I'm <span class="purple">Justin</span>, an aspiring data analyst & machine learning engineer architecting 
+                the future with a foundation of data, currently living in the UK.
             </Title>
 
             <div className="depth-intro">
@@ -38,12 +38,6 @@ const Home = () => {
                 <p>I prefer to listen carefully before providing solutions and analytics with 
                 a perfect blend of preferences of my partners/clients, my experience, research 
                 and best practices.</p>
-                <br></br>
-
-                <Title id={"contact"} size={"small"}>
-                    Want to reach out? Just <Anchor  target={false} inline={true} href={"#contacts"}>say hello</Anchor>
-                </Title>
-                <p>or keep scrolling if you want to learn more...</p>
             </div>
 
             {/* Brief project showcases */}

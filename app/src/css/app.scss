@@ -55,8 +55,9 @@ p {
     font-family: 'Averta';
 }
 
-span.orange {
-    color: var(--orange);
+span {
+    &.orange { color: var(--orange);}
+    &.purple { color: var(--purple);}
 }
 
 
