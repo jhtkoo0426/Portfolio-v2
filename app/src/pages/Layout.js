@@ -19,8 +19,16 @@ const Layout = () => {
           <div className="home-button">
             <Link to={"/"}>
               <p className="j">j.</p>
-              {/* Changes the displayed page name depending on which page the user is on. */}
-              <p className="job-title">{ page_location.pathname === "/" ? "data analyst & ML engineer" : page_location.pathname }</p>
+              {/* Changes the displayed page name depending on which page the user is on.
+                  Note: The nested ternary is for dealing with paths ending with a '/' character. */}
+              <p className="job-title">
+                { page_location.pathname === "/"
+                  ? "data analyst & ML engineer"
+                  : page_location.pathname.endsWith("/")
+                    ? page_location.pathname.substring(0, page_location.pathname.length-1)
+                    : page_location.pathname
+                }
+              </p>
             </Link>
           </div>
           <div className="topnav-menu">
