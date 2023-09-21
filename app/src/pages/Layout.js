@@ -56,7 +56,9 @@ const Layout = () => {
         </nav>
 
         {/* Container for the main content of the portfolio */}
-        <Outlet/>        
+        <div className="main-container">
+          <Outlet/>
+        </div>       
         
         {/* Bottom navigation bar */}
         <nav className="botnav-container" id="contacts">

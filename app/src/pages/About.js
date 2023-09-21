@@ -8,7 +8,7 @@ import epidemic from "../videos/epidemic-demo.mp4";
 
 const About = () => {
     return (
-        <div className="about">
+        <>
             <div className="about-intro">
                 <Title size={"huge"}>Nice to meet <span className="orange"> you</span> too :)</Title>
                 <p>I approach every challenge with curiosity and a growth mindset. I believe 
@@ -52,11 +52,11 @@ const About = () => {
             {/* Playground section */}
             <div className="playground-container" id="playground">
                 <Title size={"huge"}>Playground & Exploration</Title>
+                <br></br>
                 <p><span className="orange">Lifelong learning</span> is one of my burning passions. 
                 Outside of work, I venture into interesting and unfamiliar fields, not limited to stock 
                 trading & asset management, competitive coding, web development, cooking, and gaming 
                 (yes, I love the thrill when learning to #getgud at games!).</p>
-                <br></br>
                 <p>Recently, I started a habit of building monthly coding projects, where I would 
                 apply what I've learnt throughout my journey to create something simulating:</p>
                 
@@ -71,7 +71,7 @@ const About = () => {
                     {/* TODO: Add more projects here */}
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 

@@ -1,52 +1,44 @@
 // SCSS file for the About page.
-.about {
-    grid-column: 1 / 4;
+.about-intro {
+    padding: 0 25% 10% 25%;
+    .title { padding: 10% 0 0 0; }
+    p { padding: 5% 0 10% 0; }
+}
 
-    // Uses a grid layout to make sure the practices container can SPAN the
-    // entire window width with the app-container grid layout.
-    display: grid;
-    grid-template-columns: 1fr 1.5fr 1fr;
+.skills-container {
+    padding: 10% 25%;
+    background-color: var(--black);
+    color: var(--white);
 
-    .about-intro {
+    .skills-content {
         grid-column: 2;
-        padding-top: 10%;
-        padding-bottom: 20%;
-    }
 
-    .skills-container {
-        grid-column: 1 / 4;
-        padding: 10% 0;
-
-        // This grid layout is used to align the text contents of the practices
-        // container with the rest of the original content.
-        display: grid;
-        grid-template-columns: 1fr 1.5fr 1fr;
-        background-color: var(--black);
-        color: var(--white);
-
-        .skills-content {
-            grid-column: 2;
-
-            .list-of-skills {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                grid-column-gap: 10%;
-            }
-        }
-    }
-
-    .playground-container {
-        grid-column: 2;
-        padding: 20% 0;
-
-        .showcases {
+        .list-of-skills {
             display: grid;
             grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 10%;
         }
     }
 }
 
+.playground-container {
+    grid-column: 2;
+    padding: 5% 0;
 
+    p { padding: 10px 25% 0 25%; }
+
+    .showcases {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0 25%;
+
+        .showcase-container { 
+            padding: 5vh 0;
+
+            p { padding: 0; }
+        }
+    }
+}
 
 // Handling mobile responsiveness
 // Large Devices, Wide Screens
@@ -54,24 +46,20 @@
 
 // Medium Devices, Desktops
 @media only screen and (max-width: 992px) {
-    .about {
+    .practices-container { grid-template-columns: 1fr 4fr 1fr; }
+
+    .skills-container {
         grid-template-columns: 1fr 4fr 1fr;
-
-        .practices-container { grid-template-columns: 1fr 4fr 1fr; }
-
-        .skills-container {
-            grid-template-columns: 1fr 4fr 1fr;
-            
-            .skills-content {
-                .list-of-skills {
-                    padding-top: 5%;
-                    grid-template-columns: 1fr;
-                }
+        
+        .skills-content {
+            .list-of-skills {
+                padding-top: 5%;
+                grid-template-columns: 1fr;
             }
         }
-        .playground-container {
-            .showcases { grid-template-columns: 1fr; }
-        }
+    }
+    .playground-container {
+        .showcases { grid-template-columns: 1fr; }
     }
 }
 

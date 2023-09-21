@@ -1,9 +1,10 @@
 // SCSS file for App.js
 $white: #FFF;
-$white-purple: #EBEAEE;
 $black: #1A1C1D;
 $dark-grey: #2c2c2c;
 $purple: #420FE7;
+$light-purple: #4b19ec;
+$white-purple: #EBEAEE;
 $orange: #f07e6e;
 
 
@@ -65,6 +66,8 @@ span {
 ::-webkit-scrollbar {
     width: 14px;
     background-color: transparent;
+
+    &:hover { background-color: var(--light-purple);}
 }
   
 ::-webkit-scrollbar-track {
@@ -91,7 +94,12 @@ span {
 @media only screen and (max-width: 768px) {}
 
 // Extra Small Devices, Phones 
-@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 480px) {
+    p {
+        line-height: 140%;
+        font-size: 14px;
+    }
+}
 
 // Custom, iPhone Retina
 @media only screen and (max-width : 320px) {}

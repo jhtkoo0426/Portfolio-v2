@@ -8,7 +8,7 @@ import l4s from "../videos/l4s-demo.mp4";
 
 const Home = () => {
     return (
-        <div className="home">
+        <>
             {/* Introduction */}
             <div className="intro">
                 <Title id={"intro"} size={"huge"} is_transparent={false}>
@@ -17,16 +17,16 @@ const Home = () => {
                 <div class="blob blob-inner">
                     <span></span>
                     <span></span>
-                    <a class="content" href="#depth-intro">
+                    <a class="content" href="#intro2">
                         <p>find out more...</p>
                     </a>
                 </div>
             </div>
             
             {/* Depth intro */}
-            <Title size={"small"} id="depth-intro">
-                Hi! I'm <span class="purple">Justin</span>, an aspiring data analyst & machine learning engineer architecting 
-                the future with a foundation of data, currently living in the UK.
+            <Title size={"small"} id="intro2">
+                Hi! I'm <span class="purple">Justin</span>, an aspiring computer science graduate
+                architecting the future with a foundation of data, currently living in the UK.
             </Title>
 
             <div className="depth-intro">
@@ -64,7 +64,7 @@ const Home = () => {
                     inspection reports, and government data on school information.</p>
                 </SimpleShowcase>
             </div>
-        </div>
+        </>
     );
 }
 
