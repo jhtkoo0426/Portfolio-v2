@@ -48,11 +48,13 @@
         }
     }
 
+    .main-container { grid-column: 1/4; }
+
     .sidenav-container {
         position: fixed;
         display: block;
         padding-left: 5%;
-        top: 55%;
+        top: 55vh;
         transform: translate(0px, 0px);
         background-color: transparent;
 
