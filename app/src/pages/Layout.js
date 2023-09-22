@@ -12,7 +12,6 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Layout = () => {
     var page_location = useLocation();
-
     
     return (
       <>

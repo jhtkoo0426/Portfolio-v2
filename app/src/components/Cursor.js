@@ -17,6 +17,8 @@ const Cursor = () => {
           innerCursor.style.top = `${y}px`;
           outerCursor.style.left = `${x}px`;
           outerCursor.style.top = `${y}px`;
+
+          console.log(x, y);
         }
   
         let links = Array.from(document.querySelectorAll('a'));

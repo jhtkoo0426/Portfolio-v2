@@ -14,6 +14,7 @@ import "../src/css/home.scss";
 
 // Specific component SCSS
 import "../src/css/anchor.scss";
+import "../src/css/cursor.scss";
 import "../src/css/skill.scss";
 import "../src/css/title.scss";
 import "../src/css/simple_showcase.scss";
