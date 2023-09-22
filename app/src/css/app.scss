@@ -2,8 +2,8 @@
 $white: #FFF;
 $black: #1A1C1D;
 $dark-grey: #2c2c2c;
-$purple: #420FE7;
-$light-purple: #4b19ec;
+$purple: #f07e6e; // #420FE7;
+$light-purple: #f07e6e; // #4b19ec;
 $white-purple: #EBEAEE;
 $orange: #f07e6e;
 
@@ -26,7 +26,6 @@ $orange: #f07e6e;
     --purple: #{$purple};
     --orange: #{$orange};
 
-    cursor: none;
     color: var(--dark-grey);
 }
 

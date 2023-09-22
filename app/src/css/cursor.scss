@@ -1,31 +1,21 @@
 // SCSS file for custom cursor component.
 .inner-cursor {
     position: fixed;
+    z-index: 1;
     left: 10px;
-    width: 15px;
-    height: 15px;
+    width: 30px;
+    height: 30px;
     transform: translate(-50%, -50%);
     border-radius: 50%;
-    pointer-events: none;
-    mix-blend-mode: difference;
-    background-color: var(--white);
+    background-color: transparent;
+    border: 1px solid var(--black);
     transition: width 0.5s, height 0.5s;
+    transition: 0.1s;
 
     &.grow {
-        width: 35px;
-        height: 35px;
-        transition: width 0.5s, height 0.5s;
+        width: 45px;
+        height: 45px;
+        transition: width 0.5s, height 0.5s, background-color;
+        background-color: var(--black);
     }
-}
-
-.outer-cursor {
-    position: fixed;
-    left: 10px;
-    width: 35px;
-    height: 35px;
-    transform: translate(-50%, -50%);
-    border: 1px solid var(--black);
-    border-radius: 50%;
-    pointer-events: 0.1ms;
-    transition: 0.1s;
 }

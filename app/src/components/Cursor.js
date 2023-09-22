@@ -5,7 +5,6 @@ import React, { useEffect } from 'react'
 const Cursor = () => {
     useEffect(() => {
         let innerCursor = document.querySelector(".inner-cursor");
-        let outerCursor = document.querySelector(".outer-cursor");
     
         document.addEventListener('mousemove', moveCursor);
     
@@ -15,13 +14,10 @@ const Cursor = () => {
     
           innerCursor.style.left = `${x}px`;
           innerCursor.style.top = `${y}px`;
-          outerCursor.style.left = `${x}px`;
-          outerCursor.style.top = `${y}px`;
-
-          console.log(x, y);
         }
   
-        let links = Array.from(document.querySelectorAll('a'));
+        let links = Array.from(document.querySelectorAll('a, a.anchor'));
+
         links.forEach(link => {
           link.addEventListener('mouseover', () => {
             innerCursor.classList.add("grow");

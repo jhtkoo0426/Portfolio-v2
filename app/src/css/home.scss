@@ -50,16 +50,14 @@
         animation: animate2 4s linear infinite;
     }
     
-    &.blob-inner {
-        &:hover span:nth-child(1) {
-            border: none;
-            background: var(--orange);
-        }
+    &:hover span:nth-child(1) {
+        border: none;
+        background: var(--orange);
+    }
 
-        &:hover span:nth-child(2) {
-            border: none;
-            background: var(--purple);
-        }
+    &:hover span:nth-child(2) {
+        border: none;
+        background: var(--purple);
     }
 
     .content {

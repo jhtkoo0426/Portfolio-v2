@@ -3,6 +3,7 @@
 
 // App layout
 .app-container {
+    width: 100%;
     background-color: var(--white-purple);
     animation: app_fadeIn 2s ease;
 
@@ -52,6 +53,7 @@
 
     .main-container {
         padding-top: 15%;
+        min-height: 100vh;
     }
 
     .sidenav-container {

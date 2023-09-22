@@ -12,7 +12,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const Layout = () => {
     var page_location = useLocation();
-    
+
     return (
       <>
         <Cursor></Cursor>
@@ -59,7 +59,7 @@ const Layout = () => {
           </nav>
 
           {/* Container for the main content of the portfolio */}
-          <div className="main-container">
+          <div className="main-container" id="main-container">
             <Outlet/>
           </div>       
           
