@@ -12,7 +12,7 @@ const Home = () => {
             {/* Introduction */}
             <div className="intro">
                 <Title id={"intro"} size={"huge"} is_transparent={false}>
-                    an analytical mind who explores
+                    an analytical mind who <span className="orange">explores</span>
                 </Title>
                 <div class="blob blob-inner">
                     <span></span>
