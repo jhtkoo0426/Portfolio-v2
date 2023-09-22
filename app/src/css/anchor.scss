@@ -27,6 +27,11 @@
             transform: translate3d(0, 0, 0);
         }
     }
+
+    // Specific css for Anchor components within a SimpleShowcase component
+    .showcase-title {
+        color: var(--black);
+    }
 }
 
 

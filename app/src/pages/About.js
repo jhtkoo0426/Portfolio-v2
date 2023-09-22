@@ -62,8 +62,8 @@ const About = () => {
                 
                 {/* Project showcases */}
                 <div className="showcases">
-                    <SimpleShowcase project_name={"Epidemic Simulator"} vid={epidemic} 
-                        tags={["Simulation", "Random Walks", "Web Development (React.js)"]}>
+                    <SimpleShowcase project_name={"Epidemic Simulator"} vid={epidemic}
+                        has_link={true} link={"https://github.com/jhtkoo0426/Epidemic-Simulation"}>
                         <p>A simple web simulation to visualise the impact of human behaviour on the
                         rate and scale of transmission of diseases.</p>
                     </SimpleShowcase>

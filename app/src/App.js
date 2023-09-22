@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React from "react";
+import React, { useRef, useState, useEffect } from "react";
 
 import Layout from "./pages/Layout";
 import About from "./pages/About";
@@ -33,10 +33,27 @@ const AppRoute = () => {
 
 // Main Function
 export default function App() {
-  return (
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 3000);
+  }, []);
+
+  return isLoading ?
+    <div className="splash-screen">
+        <div className="splash-screen">
+            {/* https://codepen.io/aaroniker/pen/omvYNZ */}
+            <div class="loader circle">
+                <svg viewBox="0 0 80 80">
+                    <circle id="test" cx="40" cy="40" r="32"></circle>
+                </svg>
+            </div>
+        </div>
+    </div>:
     // Page finished loading -> Load portfolio
     <BrowserRouter>
       <AppRoute />
     </BrowserRouter>
-  )
 }

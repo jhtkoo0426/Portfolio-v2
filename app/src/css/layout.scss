@@ -1,6 +1,15 @@
 // SCSS file for Layout.js.
+
+
+// App layout
 .app-container {
     background-color: var(--white-purple);
+    animation: app_fadeIn 2s ease;
+
+    @keyframes app_fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+    }
 
     .topnav-container {
         position: fixed;
